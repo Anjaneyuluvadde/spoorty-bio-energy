@@ -1,0 +1,4303 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+public/
+  images/
+    about.jpg
+    biomethane.jpg
+    engineer.jpg
+    hero_illustration.jpg
+    hero.jpg
+  file.svg
+  globe.svg
+  next.svg
+  vercel.svg
+  window.svg
+src/
+  app/
+    about/
+      page.tsx
+    blog/
+      page.tsx
+    contact/
+      page.tsx
+    industries/
+      page.tsx
+    projects/
+      page.tsx
+    services/
+      page.tsx
+    solutions/
+      page.tsx
+    sustainability/
+      page.tsx
+    favicon.ico
+    globals.css
+    layout.tsx
+    page.tsx
+  components/
+    BackgroundEffects.tsx
+    Counter.tsx
+    CustomCursor.tsx
+    Footer.tsx
+    Navbar.tsx
+    PageHeader.tsx
+    Preloader.tsx
+    ScrollReveal.tsx
+    SmoothScrollProvider.tsx
+    ThreeDTilt.tsx
+.gitignore
+AGENTS.md
+CLAUDE.md
+eslint.config.mjs
+next.config.ts
+package.json
+postcss.config.mjs
+README.md
+tsconfig.json
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="public/file.svg">
+<svg fill="none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 13.5V5.41a1 1 0 0 0-.3-.7L9.8.29A1 1 0 0 0 9.08 0H1.5v13.5A2.5 2.5 0 0 0 4 16h8a2.5 2.5 0 0 0 2.5-2.5m-1.5 0v-7H8v-5H3v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1M9.5 5V2.12L12.38 5zM5.13 5h-.62v1.25h2.12V5zm-.62 3h7.12v1.25H4.5zm.62 3h-.62v1.25h7.12V11z" clip-rule="evenodd" fill="#666" fill-rule="evenodd"/></svg>
+</file>
+
+<file path="public/globe.svg">
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.27 14.1a6.5 6.5 0 0 0 3.67-3.45q-1.24.21-2.7.34-.31 1.83-.97 3.1M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.48-1.52a7 7 0 0 1-.96 0H7.5a4 4 0 0 1-.84-1.32q-.38-.89-.63-2.08a40 40 0 0 0 3.92 0q-.25 1.2-.63 2.08a4 4 0 0 1-.84 1.31zm2.94-4.76q1.66-.15 2.95-.43a7 7 0 0 0 0-2.58q-1.3-.27-2.95-.43a18 18 0 0 1 0 3.44m-1.27-3.54a17 17 0 0 1 0 3.64 39 39 0 0 1-4.3 0 17 17 0 0 1 0-3.64 39 39 0 0 1 4.3 0m1.1-1.17q1.45.13 2.69.34a6.5 6.5 0 0 0-3.67-3.44q.65 1.26.98 3.1M8.48 1.5l.01.02q.41.37.84 1.31.38.89.63 2.08a40 40 0 0 0-3.92 0q.25-1.2.63-2.08a4 4 0 0 1 .85-1.32 7 7 0 0 1 .96 0m-2.75.4a6.5 6.5 0 0 0-3.67 3.44 29 29 0 0 1 2.7-.34q.31-1.83.97-3.1M4.58 6.28q-1.66.16-2.95.43a7 7 0 0 0 0 2.58q1.3.27 2.95.43a18 18 0 0 1 0-3.44m.17 4.71q-1.45-.12-2.69-.34a6.5 6.5 0 0 0 3.67 3.44q-.65-1.27-.98-3.1" fill="#666"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+</file>
+
+<file path="public/next.svg">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 394 80"><path fill="#000" d="M262 0h68.5v12.7h-27.2v66.6h-13.6V12.7H262V0ZM149 0v12.7H94v20.4h44.3v12.6H94v21h55v12.6H80.5V0h68.7zm34.3 0h-17.8l63.8 79.4h17.9l-32-39.7 32-39.6h-17.9l-23 28.6-23-28.6zm18.3 56.7-9-11-27.1 33.7h17.8l18.3-22.7z"/><path fill="#000" d="M81 79.3 17 0H0v79.3h13.6V17l50.2 62.3H81Zm252.6-.4c-1 0-1.8-.4-2.5-1s-1.1-1.6-1.1-2.6.3-1.8 1-2.5 1.6-1 2.6-1 1.8.3 2.5 1a3.4 3.4 0 0 1 .6 4.3 3.7 3.7 0 0 1-3 1.8zm23.2-33.5h6v23.3c0 2.1-.4 4-1.3 5.5a9.1 9.1 0 0 1-3.8 3.5c-1.6.8-3.5 1.3-5.7 1.3-2 0-3.7-.4-5.3-1s-2.8-1.8-3.7-3.2c-.9-1.3-1.4-3-1.4-5h6c.1.8.3 1.6.7 2.2s1 1.2 1.6 1.5c.7.4 1.5.5 2.4.5 1 0 1.8-.2 2.4-.6a4 4 0 0 0 1.6-1.8c.3-.8.5-1.8.5-3V45.5zm30.9 9.1a4.4 4.4 0 0 0-2-3.3 7.5 7.5 0 0 0-4.3-1.1c-1.3 0-2.4.2-3.3.5-.9.4-1.6 1-2 1.6a3.5 3.5 0 0 0-.3 4c.3.5.7.9 1.3 1.2l1.8 1 2 .5 3.2.8c1.3.3 2.5.7 3.7 1.2a13 13 0 0 1 3.2 1.8 8.1 8.1 0 0 1 3 6.5c0 2-.5 3.7-1.5 5.1a10 10 0 0 1-4.4 3.5c-1.8.8-4.1 1.2-6.8 1.2-2.6 0-4.9-.4-6.8-1.2-2-.8-3.4-2-4.5-3.5a10 10 0 0 1-1.7-5.6h6a5 5 0 0 0 3.5 4.6c1 .4 2.2.6 3.4.6 1.3 0 2.5-.2 3.5-.6 1-.4 1.8-1 2.4-1.7a4 4 0 0 0 .8-2.4c0-.9-.2-1.6-.7-2.2a11 11 0 0 0-2.1-1.4l-3.2-1-3.8-1c-2.8-.7-5-1.7-6.6-3.2a7.2 7.2 0 0 1-2.4-5.7 8 8 0 0 1 1.7-5 10 10 0 0 1 4.3-3.5c2-.8 4-1.2 6.4-1.2 2.3 0 4.4.4 6.2 1.2 1.8.8 3.2 2 4.3 3.4 1 1.4 1.5 3 1.5 5h-5.8z"/></svg>
+</file>
+
+<file path="public/vercel.svg">
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1155 1000"><path d="m577.3 0 577.4 1000H0z" fill="#fff"/></svg>
+</file>
+
+<file path="public/window.svg">
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 2.5h13v10a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1zM0 1h16v11.5a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 0 12.5zm3.75 4.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5M7 4.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0m1.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5" fill="#666"/></svg>
+</file>
+
+<file path="src/app/about/page.tsx">
+'use client';
+
+import React from 'react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import PageHeader from '@/components/PageHeader';
+import ScrollReveal from '@/components/ScrollReveal';
+import Counter from '@/components/Counter';
+import { Leaf, Eye, ShieldAlert, Award, Star, Settings } from 'lucide-react';
+
+export default function AboutPage() {
+  return (
+    <>
+      <Navbar />
+
+      <main className="flex-grow bg-[#F8FAFC]">
+        {/* Page Header */}
+        <PageHeader 
+          title="About Us"
+          description="Driving innovation and sustainability through advanced biogas and renewable energy solutions."
+          breadcrumbs={[
+            { name: 'Home', href: '/' },
+            { name: 'About Us' }
+          ]}
+        />
+
+        {/* Our Story Section */}
+        <section className="py-20 max-w-[1440px] mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            {/* Story Paragraphs */}
+            <div className="lg:col-span-7 flex flex-col gap-6">
+              <ScrollReveal>
+                <h2 className="font-heading font-extrabold text-3xl md:text-4xl text-dark mb-4">
+                  Our Story
+                </h2>
+                <div className="space-y-6 text-gray-600 font-sans text-base md:text-lg leading-relaxed">
+                  <p>
+                    Spoorty Bio Energy was founded with a vision to create a sustainable future through renewable energy solutions. Over the years, we have successfully delivered numerous projects that convert organic waste into clean, green energy, enabling businesses and municipalities to lower their carbon footprints.
+                  </p>
+                  <p>
+                    We combine engineering excellence with innovative technology to deliver reliable, efficient, and cost-effective biogas solutions. From detailed feedstock testing and plant designs to complete turnkey construction and ongoing operational support, we guide our partners through every step of the energy transition.
+                  </p>
+                  <p>
+                    Today, Spoorty Bio Energy stands as a trusted engineering partner, helping agricultural enterprises, municipal corporations, and large-scale industries convert operational waste liability into a profitable, clean energy asset.
+                  </p>
+                </div>
+              </ScrollReveal>
+            </div>
+
+            {/* Story Image */}
+            <div className="lg:col-span-5">
+              <ScrollReveal delay={0.2}>
+                <div className="rounded-3xl overflow-hidden shadow-xl border border-gray-200 h-[380px] md:h-[420px] relative group">
+                  <img 
+                    src="/images/about.jpg" 
+                    alt="Spoorty Bio Energy Biogas Plant Facility" 
+                    className="object-cover h-full w-full transition-transform duration-750 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-dark/10 group-hover:bg-dark/0 transition-all duration-300" />
+                </div>
+              </ScrollReveal>
+            </div>
+          </div>
+        </section>
+
+        {/* Mission, Vision, Values Grid */}
+        <section className="py-20 bg-white border-y border-gray-100">
+          <div className="max-w-[1440px] mx-auto px-6 md:px-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Mission Card */}
+              <ScrollReveal>
+                <div className="h-full bg-[#F8FAFC] p-8 rounded-3xl border border-gray-100 hover:border-primary/20 shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-primary/10 text-primary mb-6">
+                    <Leaf className="h-6 w-6" />
+                  </div>
+                  <h3 className="font-heading font-bold text-xl text-dark mb-4">Our Mission</h3>
+                  <p className="font-sans text-sm text-gray-500 leading-relaxed">
+                    To deliver sustainable and innovative biogas solutions that create long-term value, convert waste liabilities into revenue streams, and protect our environment.
+                  </p>
+                </div>
+              </ScrollReveal>
+
+              {/* Vision Card */}
+              <ScrollReveal delay={0.1}>
+                <div className="h-full bg-[#F8FAFC] p-8 rounded-3xl border border-gray-100 hover:border-primary/20 shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-primary/10 text-primary mb-6">
+                    <Eye className="h-6 w-6" />
+                  </div>
+                  <h3 className="font-heading font-bold text-xl text-dark mb-4">Our Vision</h3>
+                  <p className="font-sans text-sm text-gray-500 leading-relaxed">
+                    To be a global leader in renewable energy and waste-to-energy technologies, driving a cleaner, greener, and self-sufficient future.
+                  </p>
+                </div>
+              </ScrollReveal>
+
+              {/* Values Card */}
+              <ScrollReveal delay={0.2}>
+                <div className="h-full bg-[#F8FAFC] p-8 rounded-3xl border border-gray-100 hover:border-primary/20 shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-primary/10 text-primary mb-6">
+                    <ShieldAlert className="h-6 w-6" />
+                  </div>
+                  <h3 className="font-heading font-bold text-xl text-dark mb-4">Our Values</h3>
+                  <p className="font-sans text-sm text-gray-500 leading-relaxed">
+                    Integrity, safety, innovation, environmental stewardship, engineering precision, and a relentless commitment to our clients' long-term operational success.
+                  </p>
+                </div>
+              </ScrollReveal>
+            </div>
+          </div>
+        </section>
+
+        {/* Statistics section */}
+        <section className="py-20 max-w-[1440px] mx-auto px-6 md:px-12 text-center">
+          <ScrollReveal>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+              {[
+                { value: 15, suffix: '+', label: 'Years Experience' },
+                { value: 100, suffix: '+', label: 'Projects Completed' },
+                { value: 500, suffix: 'K+', label: 'Tons Waste Processed' },
+                { value: 98, suffix: '%', label: 'Client Satisfaction' }
+              ].map((stat, idx) => (
+                <div key={idx} className="flex flex-col items-center p-6 bg-white border border-gray-100 rounded-3xl shadow-sm">
+                  <span className="font-heading font-extrabold text-4xl md:text-5xl text-primary mb-3">
+                    <Counter value={stat.value} suffix={stat.suffix} />
+                  </span>
+                  <span className="font-sans text-xs md:text-sm text-gray-500 font-medium">
+                    {stat.label}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  );
+}
+</file>
+
+<file path="src/app/blog/page.tsx">
+'use client';
+
+import React from 'react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import PageHeader from '@/components/PageHeader';
+import ScrollReveal from '@/components/ScrollReveal';
+import { Calendar, Clock, ArrowRight } from 'lucide-react';
+
+const posts = [
+  {
+    id: 1,
+    image: '/images/hero.jpg',
+    category: 'Technology',
+    date: 'June 25, 2026',
+    readTime: '6 min read',
+    title: 'The Future of Biomethane Upgrading: Membrane vs. Scrubbing',
+    desc: 'An in-depth analysis of membrane separation compared to chemical scrubbing technologies for clean biomethane gas grid injection.'
+  },
+  {
+    id: 2,
+    image: '/images/biomethane.jpg',
+    category: 'Operation',
+    date: 'May 18, 2026',
+    readTime: '5 min read',
+    title: 'Optimizing Digester Mixing to Prevent Silo Crust Formation',
+    desc: 'Practical operational guidelines and engineering methods to prevent floating crust layers in agricultural and industrial biogas digesters.'
+  },
+  {
+    id: 3,
+    image: '/images/about.jpg',
+    category: 'Market',
+    date: 'April 09, 2026',
+    readTime: '4 min read',
+    title: 'Understanding Carbon Credits for Commercial Biogas Developers',
+    desc: 'How renewable gas developers can leverage clean energy offsets and carbon compliance credits to improve project ROI.'
+  },
+  {
+    id: 4,
+    image: '/images/engineer.jpg',
+    category: 'Agriculture',
+    date: 'March 14, 2026',
+    readTime: '8 min read',
+    title: 'Synergistic Co-Digestion of Dairy Manure and Food Waste',
+    desc: 'A scientific analysis demonstrating how mixing high-nitrogen livestock manure with carbon-rich food waste enhances biogas yields by up to 40%.'
+  },
+  {
+    id: 5,
+    image: '/images/hero.jpg',
+    category: 'Technology',
+    date: 'February 22, 2026',
+    readTime: '5 min read',
+    title: 'Role of SCADA and IoT Sensors in Biogas Plant Safety',
+    desc: 'How automated control panels, methane leak sensors, and remote telemetry reduce plant downtime and guarantee structural safety.'
+  },
+  {
+    id: 6,
+    image: '/images/biomethane.jpg',
+    category: 'Market',
+    date: 'January 10, 2026',
+    readTime: '7 min read',
+    title: 'National Standards for Compressed Biogas (CBG) Fuel in India',
+    desc: 'Navigating the technical requirements, gas composition limits, and subsidy structures under current governmental CBG energy programs.'
+  }
+];
+
+export default function BlogPage() {
+  return (
+    <>
+      <Navbar />
+
+      <main className="flex-grow bg-[#F8FAFC]">
+        {/* Page Header */}
+        <PageHeader 
+          title="Blog & Industry News"
+          description="Stay informed with the latest insights, technological advancements, and regulatory updates in the biogas sector."
+          breadcrumbs={[
+            { name: 'Home', href: '/' },
+            { name: 'Blog' }
+          ]}
+        />
+
+        {/* Blog Grid Section */}
+        <section className="py-24 max-w-[1440px] mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {posts.map((post, idx) => (
+              <ScrollReveal key={post.id} delay={idx * 0.05}>
+                <article className="bg-white rounded-3xl overflow-hidden border border-gray-100 hover:border-primary/20 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
+                  {/* Article Banner */}
+                  <div className="relative h-56 overflow-hidden shrink-0">
+                    <img 
+                      src={post.image} 
+                      alt={post.title} 
+                      className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-dark/20 group-hover:bg-dark/10 transition-all duration-300" />
+                    
+                    {/* Floating Category Badge */}
+                    <div className="absolute top-4 left-4 bg-primary text-white font-sans text-xs font-bold py-1 px-3 rounded-lg shadow-sm">
+                      {post.category}
+                    </div>
+                  </div>
+
+                  {/* Article Info */}
+                  <div className="p-6 md:p-8 flex-grow flex flex-col justify-between">
+                    <div>
+                      {/* Meta */}
+                      <div className="flex items-center gap-4 text-xs text-gray-400 font-sans font-medium mb-3">
+                        <span className="flex items-center gap-1">
+                          <Calendar className="h-3.5 w-3.5" />
+                          {post.date}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <Clock className="h-3.5 w-3.5" />
+                          {post.readTime}
+                        </span>
+                      </div>
+
+                      {/* Title */}
+                      <h3 className="font-heading font-extrabold text-xl text-dark mb-3 leading-snug group-hover:text-primary transition-colors">
+                        {post.title}
+                      </h3>
+
+                      {/* Short description */}
+                      <p className="font-sans text-sm text-gray-500 leading-relaxed mb-6">
+                        {post.desc}
+                      </p>
+                    </div>
+
+                    {/* Read More button */}
+                    <div className="border-t border-gray-100 pt-6 mt-4">
+                      <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:text-secondary transition-colors cursor-pointer">
+                        <span>Read Full Article</span>
+                        <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  );
+}
+</file>
+
+<file path="src/app/contact/page.tsx">
+'use client';
+
+import React, { useState } from 'react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import PageHeader from '@/components/PageHeader';
+import ScrollReveal from '@/components/ScrollReveal';
+import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+
+export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  });
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('submitting');
+    // Simulate API call
+    setTimeout(() => {
+      setStatus('success');
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
+      });
+    }, 1500);
+  };
+
+  return (
+    <>
+      <Navbar />
+
+      <main className="flex-grow bg-[#F8FAFC]">
+        {/* Page Header */}
+        <PageHeader 
+          title="Contact Us"
+          description="Have questions about our biogas systems or need a custom proposal? Get in touch with our engineering team."
+          breadcrumbs={[
+            { name: 'Home', href: '/' },
+            { name: 'Contact' }
+          ]}
+        />
+
+        {/* Contact Info Grid */}
+        <section className="py-16 max-w-[1440px] mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                icon: Phone,
+                title: 'Call Us',
+                details: '+91 98765 43210',
+                sub: 'Mon - Sat, 9am - 6pm'
+              },
+              {
+                icon: Mail,
+                title: 'Email Us',
+                details: 'info@spoortybioenergy.com',
+                sub: 'Response within 24 hours'
+              },
+              {
+                icon: MapPin,
+                title: 'Visit Us',
+                details: '123 Green Energy Park',
+                sub: 'Hyderabad, Telangana, India'
+              },
+              {
+                icon: Clock,
+                title: 'Working Hours',
+                details: '09:00 AM - 06:00 PM',
+                sub: 'Closed on Sundays'
+              }
+            ].map((card, idx) => (
+              <ScrollReveal key={idx} delay={idx * 0.05}>
+                <div className="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm flex items-start gap-4">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-2xl bg-primary/10 text-primary shrink-0">
+                    <card.icon className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <h3 className="font-heading font-bold text-base text-dark mb-1">{card.title}</h3>
+                    <p className="font-sans text-sm font-semibold text-primary mb-1">{card.details}</p>
+                    <p className="font-sans text-xs text-gray-400">{card.sub}</p>
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </section>
+
+        {/* Form and Map Grid */}
+        <section className="pb-24 max-w-[1440px] mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            {/* Form */}
+            <div className="lg:col-span-7 bg-white p-8 md:p-10 rounded-3xl border border-gray-100 shadow-sm">
+              <ScrollReveal>
+                <h2 className="font-heading font-extrabold text-3xl text-dark mb-2">Send Us a Message</h2>
+                <p className="font-sans text-sm text-gray-500 mb-8">We will review your inquiry and get back to you promptly.</p>
+                
+                {status === 'success' ? (
+                  <div className="bg-secondary/10 border border-secondary/30 rounded-2xl p-6 flex items-start gap-4 text-primary">
+                    <CheckCircle className="h-6 w-6 shrink-0 mt-0.5" />
+                    <div>
+                      <h4 className="font-heading font-bold text-lg">Thank You!</h4>
+                      <p className="font-sans text-sm text-gray-600 mt-1 leading-relaxed">
+                        Your message has been sent successfully. One of our biogas engineers will contact you shortly.
+                      </p>
+                      <button 
+                        onClick={() => setStatus('idle')}
+                        className="mt-4 text-sm font-semibold underline text-primary hover:text-secondary"
+                      >
+                        Send another message
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      <div className="flex flex-col gap-2">
+                        <label htmlFor="name" className="font-sans text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                          Full Name
+                        </label>
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          required
+                          value={formData.name}
+                          onChange={handleChange}
+                          placeholder="e.g. John Doe"
+                          className="w-full bg-[#F8FAFC] border border-gray-200 rounded-xl px-4 py-3 text-sm font-sans focus:outline-none focus:border-primary focus:bg-white transition-all"
+                        />
+                      </div>
+                      <div className="flex flex-col gap-2">
+                        <label htmlFor="email" className="font-sans text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                          Email Address
+                        </label>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          required
+                          value={formData.email}
+                          onChange={handleChange}
+                          placeholder="e.g. john@company.com"
+                          className="w-full bg-[#F8FAFC] border border-gray-200 rounded-xl px-4 py-3 text-sm font-sans focus:outline-none focus:border-primary focus:bg-white transition-all"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      <div className="flex flex-col gap-2">
+                        <label htmlFor="phone" className="font-sans text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                          Phone Number
+                        </label>
+                        <input
+                          type="tel"
+                          id="phone"
+                          name="phone"
+                          value={formData.phone}
+                          onChange={handleChange}
+                          placeholder="e.g. +91 98765 43210"
+                          className="w-full bg-[#F8FAFC] border border-gray-200 rounded-xl px-4 py-3 text-sm font-sans focus:outline-none focus:border-primary focus:bg-white transition-all"
+                        />
+                      </div>
+                      <div className="flex flex-col gap-2">
+                        <label htmlFor="subject" className="font-sans text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                          Subject
+                        </label>
+                        <select
+                          id="subject"
+                          name="subject"
+                          required
+                          value={formData.subject}
+                          onChange={handleChange}
+                          className="w-full bg-[#F8FAFC] border border-gray-200 rounded-xl px-4 py-3 text-sm font-sans focus:outline-none focus:border-primary focus:bg-white transition-all"
+                        >
+                          <option value="">Select a topic</option>
+                          <option value="General Inquiry">General Inquiry</option>
+                          <option value="Biogas Project Proposal">Biogas Project Proposal</option>
+                          <option value="Upgrading Technology">Upgrading Technology</option>
+                          <option value="EPC & Consulting">EPC & Consulting</option>
+                          <option value="Operations Support">Operations Support</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col gap-2">
+                      <label htmlFor="message" className="font-sans text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                        Your Message
+                      </label>
+                      <textarea
+                        id="message"
+                        name="message"
+                        required
+                        rows={5}
+                        value={formData.message}
+                        onChange={handleChange}
+                        placeholder="Please describe your feedstock resources, target capacity, or energy conversion requirements..."
+                        className="w-full bg-[#F8FAFC] border border-gray-200 rounded-xl px-4 py-3 text-sm font-sans focus:outline-none focus:border-primary focus:bg-white transition-all resize-none"
+                      />
+                    </div>
+
+                    <button
+                      type="submit"
+                      disabled={status === 'submitting'}
+                      className="w-full inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/95 text-white font-sans font-semibold py-3 px-6 rounded-xl transition-all shadow-md active:scale-95 cursor-pointer disabled:opacity-50"
+                    >
+                      {status === 'submitting' ? (
+                        <span>Submitting...</span>
+                      ) : (
+                        <>
+                          <span>Send Message</span>
+                          <Send className="h-4 w-4" />
+                        </>
+                      )}
+                    </button>
+                  </form>
+                )}
+              </ScrollReveal>
+            </div>
+
+            {/* Map */}
+            <div className="lg:col-span-5 flex flex-col h-full">
+              <ScrollReveal delay={0.2} className="h-full flex flex-col">
+                <div className="bg-white p-4 rounded-3xl border border-gray-100 shadow-sm flex-grow min-h-[350px] lg:min-h-0 relative group overflow-hidden">
+                  <iframe 
+                    title="Spoorty Bio Energy Location Map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.750849313936!2d78.38202931533355!3d17.43813998804868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93e878508ad9%3A0xe108e4eefb9f29ee!2sHITEC%20City%2C%20Hyderabad%2C%20Telangana%2C%20India!5e0!3m2!1sen!2sus!4v1655000000000!5m2!1sen!2sus"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen={true}
+                    loading="lazy"
+                    className="rounded-2xl"
+                  />
+                </div>
+              </ScrollReveal>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  );
+}
+</file>
+
+<file path="src/app/industries/page.tsx">
+'use client';
+
+import React from 'react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import PageHeader from '@/components/PageHeader';
+import ScrollReveal from '@/components/ScrollReveal';
+import { 
+  Sprout, Milk, Utensils, Droplet, Trash2, Settings, 
+  ArrowRight, ShieldCheck, CheckCircle2 
+} from 'lucide-react';
+
+const industries = [
+  {
+    icon: Sprout,
+    title: 'Agriculture',
+    desc: 'Transforming agricultural crop residues, straw, silage, and energy crops into clean biogas and organic digestate fertilizer.',
+    feedstocks: ['Rice straw & wheat chaff', 'Maize & grass silage', 'Horticulture waste'],
+    benefits: ['Zero crop residue burning', 'High-quality bio-fertilizer', 'Soil nutrient replenishment']
+  },
+  {
+    icon: Milk,
+    title: 'Dairy & Livestock',
+    desc: 'Managing livestock dung, poultry litter, and dairy farm wash wastewater with anaerobic digesters to generate electricity and control odor.',
+    feedstocks: ['Cow dung & poultry manure', 'Dairy processing washwater', 'Bedding organic scrap'],
+    benefits: ['Pathogen and odor reduction', 'Local grid power generation', 'Liquid organic compost source']
+  },
+  {
+    icon: Utensils,
+    title: 'Food Processing',
+    desc: 'Converting packing plant organic scrap, beverage waste, starch, and slaughterhouse waste into reliable plant process steam.',
+    feedstocks: ['Fruit & vegetable peelings', 'Starch & confectionery wash', 'Brewery & distillery spent grain'],
+    benefits: ['Lower municipal landfill costs', 'On-site steam generation', 'Enhanced corporate sustainability']
+  },
+  {
+    icon: Droplet,
+    title: 'Sugar & Distilleries',
+    desc: 'Fermenting pressmud, bagasse fractions, and wash liquor effluent to generate high-yield biomethane and capture CO2.',
+    feedstocks: ['Pressmud & filter cake', 'Spent wash & distillery effluent', 'Cane wash water solids'],
+    benefits: ['Effective effluent treatment', 'Captive power self-sufficiency', 'Captured bio-CO2 commercialization']
+  },
+  {
+    icon: Trash2,
+    title: 'Municipal Waste',
+    desc: 'Processing sorted organic municipal solid waste (MSW) and hotel food scraps to fuel municipal vehicles and produce clean biomethane.',
+    feedstocks: ['Household food waste', 'Market vegetable waste', 'Hotel & institutional leftovers'],
+    benefits: ['Landfill diversion compliance', 'Bio-CNG vehicle fuel sourcing', 'Clean green city initiatives']
+  },
+  {
+    icon: Settings,
+    title: 'Industrial Manufacturing',
+    desc: 'Treating paper mill sludge, pharmaceutical organics, and industrial wastewater chemical oxygen demand (COD) through high-rate reactors.',
+    feedstocks: ['Paper & pulp sludge', 'Pharmaceutical chemical waste', 'Textile wastewater starch'],
+    benefits: ['Strict environmental compliance', 'Heat recovery for processes', 'Reduced industrial fuel costs']
+  }
+];
+
+export default function IndustriesPage() {
+  return (
+    <>
+      <Navbar />
+
+      <main className="flex-grow bg-[#F8FAFC]">
+        {/* Page Header */}
+        <PageHeader 
+          title="Industries We Serve"
+          description="Delivering sustainable energy systems and circular economy infrastructure across major economic sectors."
+          breadcrumbs={[
+            { name: 'Home', href: '/' },
+            { name: 'Industries' }
+          ]}
+        />
+
+        {/* Industries Grid */}
+        <section className="py-24 max-w-[1440px] mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {industries.map((ind, idx) => (
+              <ScrollReveal key={idx} delay={idx * 0.05}>
+                <div className="h-full bg-white p-8 rounded-3xl border border-gray-100 hover:border-primary/20 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                  <div>
+                    {/* Header Icon */}
+                    <div className="flex items-center justify-center h-14 w-14 rounded-2xl bg-[#F8FAFC] group-hover:bg-primary/10 text-primary group-hover:text-secondary shadow-sm transition-all mb-8 border border-gray-100">
+                      <ind.icon className="h-7 w-7" />
+                    </div>
+
+                    {/* Title */}
+                    <h3 className="font-heading font-extrabold text-2xl text-dark mb-4 group-hover:text-primary transition-colors">
+                      {ind.title}
+                    </h3>
+
+                    {/* Description */}
+                    <p className="font-sans text-sm text-gray-500 leading-relaxed mb-6">
+                      {ind.desc}
+                    </p>
+
+                    {/* Feedstock Details */}
+                    <div className="mb-6">
+                      <h4 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-3">
+                        Target Feedstocks
+                      </h4>
+                      <ul className="space-y-2 text-sm text-gray-600 font-sans">
+                        {ind.feedstocks.map((item, fIdx) => (
+                          <li key={fIdx} className="flex items-center gap-2">
+                            <span className="h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Benefits Details */}
+                    <div className="border-t border-gray-100 pt-6 mb-8">
+                      <h4 className="font-heading font-bold text-xs uppercase tracking-wider text-secondary mb-3">
+                        Key Benefits
+                      </h4>
+                      <ul className="space-y-2 text-sm text-gray-600 font-sans">
+                        {ind.benefits.map((benefit, bIdx) => (
+                          <li key={bIdx} className="flex items-center gap-2">
+                            <CheckCircle2 className="h-4 w-4 text-primary shrink-0" />
+                            <span>{benefit}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* CTA link */}
+                  <a 
+                    href="/contact" 
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-primary hover:text-secondary transition-colors"
+                  >
+                    <span>Request Industry Case Study</span>
+                    <ArrowRight className="h-4 w-4" />
+                  </a>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  );
+}
+</file>
+
+<file path="src/app/projects/page.tsx">
+'use client';
+
+import React, { useState, useEffect, useRef } from 'react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import PageHeader from '@/components/PageHeader';
+import ScrollReveal from '@/components/ScrollReveal';
+import ThreeDTilt from '@/components/ThreeDTilt';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Calendar, MapPin } from 'lucide-react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+const categories = ['All', 'Agriculture', 'Dairy', 'Industrial', 'Municipal'];
+
+const projects = [
+  {
+    id: 1,
+    image: '/images/hero.jpg',
+    title: '75 TPD Biogas Plant',
+    category: 'Dairy',
+    location: 'Punjab, India',
+    industry: 'Dairy Industry',
+    capacity: '75 Tons Per Day',
+    achievement: 'Generates 1.2MW power & organic fertilizer',
+    year: '2025'
+  },
+  {
+    id: 2,
+    image: '/images/biomethane.jpg',
+    title: '50 TPD Biomethane Upgrading Plant',
+    category: 'Industrial',
+    location: 'Maharashtra, India',
+    industry: 'Food Processing Sector',
+    capacity: '50 Tons Per Day',
+    achievement: '99% pure biomethane grid injection',
+    year: '2024'
+  },
+  {
+    id: 3,
+    image: '/images/about.jpg',
+    title: '100 TPD High-Rate Digester',
+    category: 'Industrial',
+    location: 'Uttar Pradesh, India',
+    industry: 'Sugar & Distillery Sector',
+    capacity: '100 Tons Per Day',
+    achievement: 'Treated spent wash with high COD removal',
+    year: '2025'
+  },
+  {
+    id: 4,
+    image: '/images/hero.jpg',
+    title: '30 TPD Agri-Waste Biogas Plant',
+    category: 'Agriculture',
+    location: 'Haryana, India',
+    industry: 'Agricultural Farm Cooperative',
+    capacity: '30 Tons Per Day',
+    achievement: 'Converts paddy straw to clean cooking gas',
+    year: '2023'
+  },
+  {
+    id: 5,
+    image: '/images/biomethane.jpg',
+    title: '20 TPD Co-Digestion Plant',
+    category: 'Agriculture',
+    location: 'Karnataka, India',
+    industry: 'Sugar & Livestock Mix',
+    capacity: '20 Tons Per Day',
+    achievement: 'Offsets 4,500 tons CO2 emissions annually',
+    year: '2024'
+  },
+  {
+    id: 6,
+    image: '/images/engineer.jpg',
+    title: 'Municipal Solid Waste (MSW) Biogas',
+    category: 'Municipal',
+    location: 'Hyderabad, India',
+    industry: 'City Corporation Project',
+    capacity: '120 Tons Per Day',
+    achievement: 'Fuels municipal garbage trucks via Bio-CNG',
+    year: '2026'
+  }
+];
+
+export default function ProjectsPage() {
+  const [activeCategory, setActiveCategory] = useState('All');
+  const gridRef = useRef<HTMLDivElement>(null);
+
+  const filteredProjects = activeCategory === 'All'
+    ? projects
+    : projects.filter(p => p.category === activeCategory);
+
+  useEffect(() => {
+    // Register GSAP ScrollTrigger
+    gsap.registerPlugin(ScrollTrigger);
+    
+    const container = gridRef.current;
+    if (!container) return;
+
+    const cards = container.querySelectorAll('.project-card-inner');
+    if (!cards || cards.length === 0) return;
+
+    // Skip stacked animations on mobile layouts
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    if (isMobile) {
+      gsap.set(cards, { x: 0, y: 0, rotation: 0, scale: 1 });
+      return;
+    }
+
+    // Stack cards initially and calculate exact center offsets relative to the grid container
+    cards.forEach((card, index) => {
+      const rotation = (index - 2.5) * 5; // staggered rotation stack
+      const offsetX = (index - 2.5) * 12;
+      const offsetY = index % 2 === 0 ? -15 : 15;
+
+      gsap.set(card, {
+        x: () => {
+          const containerRect = container.getBoundingClientRect();
+          const cardRect = card.getBoundingClientRect();
+          const centerX = containerRect.width / 2 - cardRect.width / 2;
+          const currentX = card.getBoundingClientRect().left - containerRect.left;
+          return centerX - currentX + offsetX;
+        },
+        y: () => {
+          const containerRect = container.getBoundingClientRect();
+          const cardRect = card.getBoundingClientRect();
+          const centerY = containerRect.height / 3 - cardRect.height / 2;
+          const currentY = card.getBoundingClientRect().top - containerRect.top;
+          return centerY - currentY + offsetY;
+        },
+        rotation: rotation,
+        scale: 0.92,
+        z: -50,
+      });
+    });
+
+    // Timeline: overlapping stack -> shuffle flyouts -> grid alignment
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: container,
+        start: 'top 85%',
+        end: 'top 35%',
+        scrub: 1.2,
+      }
+    });
+
+    tl.to(cards, {
+      x: (i) => (i % 2 === 0 ? -90 : 90),
+      rotation: (i) => (i % 2 === 0 ? -12 : 12),
+      scale: 0.95,
+      duration: 0.4,
+      stagger: 0.05,
+    })
+    .to(cards, {
+      x: 0,
+      y: 0,
+      rotation: 0,
+      scale: 1,
+      z: 0,
+      duration: 0.8,
+      ease: 'power2.out',
+      stagger: 0.05,
+    });
+
+    return () => {
+      ScrollTrigger.getAll().forEach(t => t.kill());
+    };
+  }, [activeCategory]);
+
+  return (
+    <>
+      <Navbar />
+
+      <main className="flex-grow bg-[#F8FAFC]">
+        {/* Page Header */}
+        <PageHeader 
+          title="Our Projects"
+          description="A showcase of our high-capacity biogas plants and biomethane upgrading facilities across the region."
+          breadcrumbs={[
+            { name: 'Home', href: '/' },
+            { name: 'Projects' }
+          ]}
+        />
+
+        {/* Filters Section */}
+        <section className="pt-16 pb-8 max-w-[1440px] mx-auto px-6 md:px-12 flex justify-center">
+          <ScrollReveal>
+            <div className="flex flex-wrap gap-2.5 bg-white p-2 rounded-2xl border border-gray-100 shadow-sm">
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => setActiveCategory(cat)}
+                  className={`font-sans text-sm font-semibold py-2.5 px-5 rounded-xl transition-all cursor-pointer ${
+                    activeCategory === cat
+                      ? 'bg-primary text-white shadow-md'
+                      : 'text-gray-500 hover:text-primary hover:bg-gray-50'
+                  }`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
+          </ScrollReveal>
+        </section>
+
+        {/* Projects Grid Section */}
+        <section className="pb-24 max-w-[1440px] mx-auto px-6 md:px-12">
+          <motion.div 
+            ref={gridRef}
+            layout 
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          >
+            <AnimatePresence mode="popLayout">
+              {filteredProjects.map((project) => (
+                <motion.div
+                  key={project.id}
+                  layout
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.4 }}
+                  className="h-full"
+                >
+                  <ThreeDTilt maxRotate={6} className="h-full rounded-3xl">
+                    <div className="project-card-inner bg-white rounded-3xl overflow-hidden border border-gray-100 hover:border-primary/20 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group glow-border-animate shine-effect">
+                      {/* Image container */}
+                      <div className="relative h-64 overflow-hidden shrink-0">
+                        <img 
+                          src={project.image} 
+                          alt={project.title} 
+                          className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-dark/20 group-hover:bg-dark/10 transition-all duration-300" />
+                        
+                        {/* Floating Category Badge */}
+                        <div className="absolute top-4 left-4 bg-secondary text-white font-sans text-xs font-bold py-1 px-3.5 rounded-full shadow-md">
+                          {project.category}
+                        </div>
+                      </div>
+
+                      {/* Card Info */}
+                      <div className="p-6 md:p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                          {/* Meta information */}
+                          <div className="flex flex-wrap gap-4 text-xs text-gray-400 font-sans font-medium mb-3">
+                            <span className="flex items-center gap-1">
+                              <MapPin className="h-3.5 w-3.5 text-primary" />
+                              {project.location}
+                            </span>
+                            <span className="flex items-center gap-1">
+                              <Calendar className="h-3.5 w-3.5 text-primary" />
+                              Commissioned: {project.year}
+                            </span>
+                          </div>
+
+                          {/* Project Title */}
+                          <h3 className="font-heading font-extrabold text-2xl text-dark mb-2 group-hover:text-primary transition-colors">
+                            {project.title}
+                          </h3>
+
+                          {/* Industry Details */}
+                          <p className="font-sans text-sm font-semibold text-secondary mb-4">
+                            {project.industry}
+                          </p>
+                        </div>
+
+                        {/* Stats details inside card */}
+                        <div className="border-t border-gray-100 pt-6 mt-4 flex flex-col gap-3 font-sans">
+                          <div className="flex justify-between items-center text-sm">
+                            <span className="text-gray-400 font-medium">Capacity</span>
+                            <span className="text-dark font-bold">{project.capacity}</span>
+                          </div>
+                          <div className="flex justify-between items-start text-sm">
+                            <span className="text-gray-400 font-medium shrink-0">Impact</span>
+                            <span className="text-primary font-semibold text-right leading-tight">{project.achievement}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ThreeDTilt>
+                </motion.div>
+              ))}
+            </AnimatePresence>
+          </motion.div>
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  );
+}
+</file>
+
+<file path="src/app/services/page.tsx">
+'use client';
+
+import React from 'react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import PageHeader from '@/components/PageHeader';
+import ScrollReveal from '@/components/ScrollReveal';
+import { 
+  Factory, Leaf, Layers, Sliders, Wrench, SearchCode, 
+  ArrowRight, ShieldCheck, CheckCircle2 
+} from 'lucide-react';
+
+const services = [
+  {
+    icon: Factory,
+    image: '/images/hero.jpg',
+    title: 'Biogas Plant Engineering',
+    desc: 'Custom biogas plant design and engineering for various industries, agriculture, and municipal corporations.',
+    features: ['Process & Flow Modeling', 'Detailed Structural Design', 'Piping & Instrument Diagrams', 'Digester Sizing & Mixing Optimization'],
+    tags: ['Maximum Gas Yield', 'Low Operational Costs']
+  },
+  {
+    icon: Leaf,
+    image: '/images/biomethane.jpg',
+    title: 'Biomethane Upgrading Systems',
+    desc: 'Advanced upgrading systems to purify biogas into clean, high-quality biomethane suitable for grid injection or vehicle fuel.',
+    features: ['Membrane Separation Technology', 'H2S & CO2 Scrubbing Systems', 'Gas Compression & Drying', 'Grid Injection Stations'],
+    tags: ['99% Pure Methane', 'Zero Carbon Emissions']
+  },
+  {
+    icon: Layers,
+    image: '/images/about.jpg',
+    title: 'EPC Solutions',
+    desc: 'Complete Engineering, Procurement, and Construction services from initial groundwork design to full commissioning.',
+    features: ['Turnkey Project Management', 'Technology Selection & Sourcing', 'Civil & Mechanical Construction', 'Quality Control & Safety Audits'],
+    tags: ['On-time Delivery', 'Single Point Responsibility']
+  },
+  {
+    icon: Sliders,
+    image: '/images/engineer.jpg', // we can reuse engineer image here
+    title: 'Plant Automation & Control',
+    desc: 'Smart automation and monitoring systems to ensure safe, stable, and highly efficient plant operation.',
+    features: ['SCADA & PLC System Design', 'Remote Monitoring & IoT Integration', 'Gas Leakage Detection Systems', 'Automated Feedstock Dosing Control'],
+    tags: ['24/7 Remote Monitoring', 'Optimized Operations']
+  },
+  {
+    icon: Wrench,
+    image: '/images/engineer.jpg',
+    title: 'Operation & Maintenance',
+    desc: 'Reliable, comprehensive operations and preventative maintenance services to guarantee long-term plant performance.',
+    features: ['Routine Audits & Inspections', 'Biological Process Support', 'Spare Parts Logistics', 'Emergency Troubleshooting'],
+    tags: ['98% Plant Uptime', 'Extended Lifecycle']
+  },
+  {
+    icon: SearchCode,
+    image: '/images/biomethane.jpg',
+    title: 'Feedstock Assessment & Analysis',
+    desc: 'Scientific evaluation and laboratory analysis of organic materials to optimize digestion stability and maximize methane output.',
+    features: ['Anaerobic Digestion Testing', 'Chemical Oxygen Demand (COD) Analysis', 'Trace Element Optimization', 'Co-digestion Synergy Modeling'],
+    tags: ['Scientific Feedstock Mix', 'Enhanced Gas Production']
+  }
+];
+
+export default function ServicesPage() {
+  return (
+    <>
+      <Navbar />
+
+      <main className="flex-grow bg-[#F8FAFC]">
+        {/* Page Header */}
+        <PageHeader 
+          title="Our Services"
+          description="End-to-end engineering, technology, and support solutions for biogas and biomethane projects."
+          breadcrumbs={[
+            { name: 'Home', href: '/' },
+            { name: 'Services' }
+          ]}
+        />
+
+        {/* Services Grid Section */}
+        <section className="py-24 max-w-[1440px] mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {services.map((service, idx) => (
+              <ScrollReveal key={idx} delay={idx * 0.05}>
+                <div className="bg-white rounded-3xl overflow-hidden border border-gray-100 hover:border-primary/20 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
+                  {/* Top Image Banner */}
+                  <div className="relative h-64 overflow-hidden shrink-0">
+                    <img 
+                      src={service.image} 
+                      alt={service.title} 
+                      className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+                    />
+                    {/* Visual Overlay */}
+                    <div className="absolute inset-0 bg-dark/25 group-hover:bg-dark/15 transition-all duration-300" />
+                    
+                    {/* Floating Service Icon */}
+                    <div className="absolute bottom-6 left-6 flex items-center justify-center h-14 w-14 rounded-2xl bg-white border border-gray-100 text-primary shadow-lg z-10">
+                      <service.icon className="h-6 w-6" />
+                    </div>
+                  </div>
+
+                  {/* Card Content */}
+                  <div className="p-8 flex-grow flex flex-col justify-between">
+                    <div>
+                      {/* Title */}
+                      <h3 className="font-heading font-extrabold text-2xl text-dark mb-4 group-hover:text-primary transition-colors">
+                        {service.title}
+                      </h3>
+                      
+                      {/* Description */}
+                      <p className="font-sans text-sm text-gray-500 leading-relaxed mb-6">
+                        {service.desc}
+                      </p>
+
+                      {/* Scopes Checklist */}
+                      <div className="border-t border-gray-100 pt-6 mb-8">
+                        <h4 className="font-heading font-bold text-xs uppercase tracking-wider text-gray-400 mb-4">
+                          Detailed Project Scopes
+                        </h4>
+                        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600 font-sans">
+                          {service.features.map((feature, fIdx) => (
+                            <li key={fIdx} className="flex items-center gap-2">
+                              <CheckCircle2 className="h-4 w-4 text-secondary shrink-0" />
+                              <span>{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+
+                    {/* Footer Tags & CTA Link */}
+                    <div className="border-t border-gray-100 pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                      {/* Tags */}
+                      <div className="flex flex-wrap gap-2">
+                        {service.tags.map((tag, tIdx) => (
+                          <span 
+                            key={tIdx} 
+                            className="inline-flex text-xs font-semibold bg-[#F8FAFC] border border-gray-200 text-primary py-1 px-3 rounded-full"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+
+                      {/* Contact Button link */}
+                      <a 
+                        href="/contact" 
+                        className="inline-flex items-center gap-1 text-sm font-semibold text-primary hover:text-secondary transition-colors shrink-0"
+                      >
+                        <span>Request Details</span>
+                        <ArrowRight className="h-4 w-4" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  );
+}
+</file>
+
+<file path="src/app/solutions/page.tsx">
+'use client';
+
+import React from 'react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import PageHeader from '@/components/PageHeader';
+import ScrollReveal from '@/components/ScrollReveal';
+import { 
+  Factory, Leaf, Layers, Sliders, Wrench, Flame, 
+  ArrowRight, CheckCircle2 
+} from 'lucide-react';
+
+const solutions = [
+  {
+    icon: Factory,
+    image: '/images/hero.jpg',
+    title: 'Biogas Plant Design',
+    desc: 'Engineering, construction, and commissioning of high-performance industrial and agricultural biogas plants.',
+    features: ['Process & Flow Modeling', 'Detailed Structural Design', 'Digester Sizing & Mixing', 'Technology Selection'],
+    tags: ['Waste to Energy', 'High Methane Yield']
+  },
+  {
+    icon: Flame,
+    image: '/images/biomethane.jpg',
+    title: 'Bio-CNG Production',
+    desc: 'Purification and compression systems to convert raw biogas into clean, high-grade transportation fuel.',
+    features: ['High-Pressure Compression', 'Gas Dispensing Systems', 'Moisture Removal Systems', 'Storage Cascade Engineering'],
+    tags: ['Clean Vehicle Fuel', 'Carbon Reduction']
+  },
+  {
+    icon: Leaf,
+    image: '/images/about.jpg',
+    title: 'Biomethane Upgradation',
+    desc: 'Advanced gas purification and scrubbing systems that upgrade biogas to natural gas grid standards.',
+    features: ['Membrane Separation', 'CO2 & H2S Scrubbing', 'Grid Injection Stations', 'Gas Composition Analytics'],
+    tags: ['99% Pure Methane', 'Grid Compliant']
+  },
+  {
+    icon: Sliders,
+    image: '/images/engineer.jpg',
+    title: 'Organic Waste Management',
+    desc: 'Efficient technologies for sorting, handling, processing, and digesting solid and liquid organic wastes.',
+    features: ['Pre-treatment Sorting', 'Substrate Pasteurization', 'Feedstock Dosing Control', 'Digestate Management'],
+    tags: ['Zero Landfill', 'Circular Economy']
+  },
+  {
+    icon: Layers,
+    image: '/images/hero.jpg',
+    title: 'Industrial Energy Solutions',
+    desc: 'Tailored renewable thermal and electrical solutions to help industrial manufacturing plants decarbonize.',
+    features: ['Biogas Boiler Retrofitting', 'CHP Co-generation Setup', 'Thermal Integration', 'Carbon Credits Support'],
+    tags: ['Fossil Fuel Free', 'Cost Reduction']
+  },
+  {
+    icon: Wrench,
+    image: '/images/engineer.jpg',
+    title: 'Operation & Maintenance',
+    desc: 'Long-term operational support, biological process management, and preventive maintenance schedules.',
+    features: ['Biological Monitoring', 'Routine Safety Audits', 'Spare Parts Sourcing', 'Emergency Troubleshooting'],
+    tags: ['98% Plant Uptime', 'Enhanced Plant Life']
+  }
+];
+
+export default function SolutionsPage() {
+  return (
+    <>
+      <Navbar />
+
+      <main className="flex-grow bg-[#F8FAFC]">
+        {/* Page Header */}
+        <PageHeader 
+          title="Our Solutions"
+          description="End-to-end engineering, design, and operations for sustainable organic waste management and clean bioenergy."
+          breadcrumbs={[
+            { name: 'Home', href: '/' },
+            { name: 'Solutions' }
+          ]}
+        />
+
+        {/* Solutions Grid Section */}
+        <section className="py-24 max-w-[1440px] mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {solutions.map((sol, idx) => (
+              <ScrollReveal key={idx} delay={idx * 0.05}>
+                <div className="bg-white rounded-3xl overflow-hidden border border-gray-100 hover:border-primary/20 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
+                  {/* Top Image Banner */}
+                  <div className="relative h-64 overflow-hidden shrink-0">
+                    <img 
+                      src={sol.image} 
+                      alt={sol.title} 
+                      className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+                    />
+                    {/* Visual Overlay */}
+                    <div className="absolute inset-0 bg-dark/25 group-hover:bg-dark/15 transition-all duration-300" />
+                    
+                    {/* Floating Service Icon */}
+                    <div className="absolute bottom-6 left-6 flex items-center justify-center h-14 w-14 rounded-2xl bg-white border border-gray-100 text-primary shadow-lg z-10">
+                      <sol.icon className="h-6 w-6" />
+                    </div>
+                  </div>
+
+                  {/* Card Content */}
+                  <div className="p-8 flex-grow flex flex-col justify-between">
+                    <div>
+                      {/* Title */}
+                      <h3 className="font-heading font-extrabold text-2xl text-dark mb-4 group-hover:text-primary transition-colors">
+                        {sol.title}
+                      </h3>
+                      
+                      {/* Description */}
+                      <p className="font-sans text-sm text-gray-500 leading-relaxed mb-6">
+                        {sol.desc}
+                      </p>
+
+                      {/* Scopes Checklist */}
+                      <div className="border-t border-gray-100 pt-6 mb-8">
+                        <h4 className="font-heading font-bold text-xs uppercase tracking-wider text-gray-400 mb-4">
+                          Detailed Project Scopes
+                        </h4>
+                        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600 font-sans">
+                          {sol.features.map((feature, fIdx) => (
+                            <li key={fIdx} className="flex items-center gap-2">
+                              <CheckCircle2 className="h-4 w-4 text-secondary shrink-0" />
+                              <span>{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+
+                    {/* Footer Tags & CTA Link */}
+                    <div className="border-t border-gray-100 pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                      {/* Tags */}
+                      <div className="flex flex-wrap gap-2">
+                        {sol.tags.map((tag, tIdx) => (
+                          <span 
+                            key={tIdx} 
+                            className="inline-flex text-xs font-semibold bg-[#F8FAFC] border border-gray-200 text-primary py-1 px-3 rounded-full"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+
+                      {/* Contact Button link */}
+                      <a 
+                        href="/contact" 
+                        className="inline-flex items-center gap-1 text-sm font-semibold text-primary hover:text-secondary transition-colors shrink-0"
+                      >
+                        <span>Request Details</span>
+                        <ArrowRight className="h-4 w-4" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  );
+}
+</file>
+
+<file path="src/app/sustainability/page.tsx">
+'use client';
+
+import React from 'react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import PageHeader from '@/components/PageHeader';
+import ScrollReveal from '@/components/ScrollReveal';
+import { Calendar, Clock, ArrowRight } from 'lucide-react';
+
+const articles = [
+  {
+    id: 1,
+    image: '/images/hero.jpg',
+    category: 'Circular Economy',
+    date: 'June 25, 2026',
+    readTime: '6 min read',
+    title: 'How Bio-CNG Production Closes the Municipal Waste Loop',
+    desc: 'An exploration of urban waste processing systems that convert biodegradable municipal trash into clean, high-grade CNG fuel for city buses.'
+  },
+  {
+    id: 2,
+    image: '/images/biomethane.jpg',
+    category: 'Carbon Offset',
+    date: 'May 18, 2026',
+    readTime: '5 min read',
+    title: 'Tracking Scope 1 & 2 Emissions in Organic Digestion Plants',
+    desc: 'Detailed methodologies for measuring and mitigating fugitive methane emissions while optimizing net carbon offset values.'
+  },
+  {
+    id: 3,
+    image: '/images/about.jpg',
+    category: 'Soil Health',
+    date: 'April 09, 2026',
+    readTime: '4 min read',
+    title: 'The Nutrient-Rich Future of Organic digestate Fertilizers',
+    desc: 'How scientific composting of biogas plant sludge creates mineral-rich bio-fertilizers that restore soil carbon and crop health.'
+  },
+  {
+    id: 4,
+    image: '/images/engineer.jpg',
+    category: 'Agriculture',
+    date: 'March 14, 2026',
+    readTime: '8 min read',
+    title: 'Decarbonizing Dairy Cooperatives with Biogas Boilers',
+    desc: 'A case study detailing how farm-scale anaerobic digesters provide continuous clean heat for agricultural milk pasteurization processes.'
+  },
+  {
+    id: 5,
+    image: '/images/hero.jpg',
+    category: 'Energy Recovery',
+    date: 'February 22, 2026',
+    readTime: '5 min read',
+    title: 'Advanced Membrane Separation for 99% Pure Biomethane',
+    desc: 'Comparing the electrical footprint and methane recovery efficiency of modular membrane upgrading stations.'
+  },
+  {
+    id: 6,
+    image: '/images/biomethane.jpg',
+    category: 'Zero Waste',
+    date: 'January 10, 2026',
+    readTime: '7 min read',
+    title: 'Industrial Distillery Wastewater treatment case studies',
+    desc: 'How sugar and distillery factories leverage anaerobic digestion of high-COD waste streams to generate self-sustaining plant energy.'
+  }
+];
+
+export default function SustainabilityPage() {
+  return (
+    <>
+      <Navbar />
+
+      <main className="flex-grow bg-[#F8FAFC]">
+        {/* Page Header */}
+        <PageHeader 
+          title="Sustainability & Impact"
+          description="Every Spoorty Bio Energy project promotes circular economy principles, reduces carbon footprint, and recycles organic waste."
+          breadcrumbs={[
+            { name: 'Home', href: '/' },
+            { name: 'Sustainability' }
+          ]}
+        />
+
+        {/* Sustainability Articles Grid */}
+        <section className="py-24 max-w-[1440px] mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {articles.map((article, idx) => (
+              <ScrollReveal key={article.id} delay={idx * 0.05}>
+                <article className="bg-white rounded-3xl overflow-hidden border border-gray-100 hover:border-primary/20 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
+                  {/* Article Banner */}
+                  <div className="relative h-56 overflow-hidden shrink-0">
+                    <img 
+                      src={article.image} 
+                      alt={article.title} 
+                      className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-dark/20 group-hover:bg-dark/10 transition-all duration-300" />
+                    
+                    {/* Floating Category Badge */}
+                    <div className="absolute top-4 left-4 bg-primary text-white font-sans text-xs font-bold py-1 px-3 rounded-lg shadow-sm">
+                      {article.category}
+                    </div>
+                  </div>
+
+                  {/* Article Info */}
+                  <div className="p-6 md:p-8 flex-grow flex flex-col justify-between">
+                    <div>
+                      {/* Meta */}
+                      <div className="flex items-center gap-4 text-xs text-gray-400 font-sans font-medium mb-3">
+                        <span className="flex items-center gap-1">
+                          <Calendar className="h-3.5 w-3.5" />
+                          {article.date}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <Clock className="h-3.5 w-3.5" />
+                          {article.readTime}
+                        </span>
+                      </div>
+
+                      {/* Title */}
+                      <h3 className="font-heading font-extrabold text-xl text-dark mb-3 leading-snug group-hover:text-primary transition-colors">
+                        {article.title}
+                      </h3>
+
+                      {/* Short description */}
+                      <p className="font-sans text-sm text-gray-500 leading-relaxed mb-6">
+                        {article.desc}
+                      </p>
+                    </div>
+
+                    {/* Read More button */}
+                    <div className="border-t border-gray-100 pt-6 mt-4">
+                      <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:text-secondary transition-colors cursor-pointer">
+                        <span>Read Full Article</span>
+                        <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  );
+}
+</file>
+
+<file path="src/app/globals.css">
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0B6E4F;
+  --color-secondary: #22C55E;
+  --color-accent: #84CC16;
+  --color-dark: #0B1E18;
+  --color-background-slate: #F8FAFC;
+  --color-text-charcoal: #111827;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+  --font-heading: var(--font-manrope), ui-sans-serif, system-ui;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-fade-in-up: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+:root {
+  --background: #F8FAFC;
+  --foreground: #111827;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Glassmorphism Classes */
+.glass-nav {
+  background: rgba(11, 30, 24, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-nav-solid {
+  background: #0B1E18;
+  border-bottom: 1px solid rgba(11, 110, 79, 0.2);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-card-dark {
+  background: rgba(11, 30, 24, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Custom Gradients */
+.gradient-border {
+  position: relative;
+}
+.gradient-border::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, #0B6E4F 0%, #22C55E 50%, #84CC16 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(11, 110, 79, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(11, 110, 79, 0.03) 1px, transparent 1px);
+}
+
+/* Button ripple visual placeholder effect */
+.btn-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Transition delays */
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+.animation-delay-600 {
+  animation-delay: 600ms;
+}
+
+/* 3D tilt styles */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Shine Sweep Effect */
+.shine-effect {
+  position: relative;
+  overflow: hidden;
+}
+.shine-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.25),
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: none;
+}
+.shine-effect:hover::before {
+  animation: shine-sweep 0.8s ease-in-out forwards;
+}
+
+@keyframes shine-sweep {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+/* Moving Glow Border keyframes */
+.glow-border-animate {
+  position: relative;
+}
+.glow-border-animate::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    90deg,
+    #0B6E4F,
+    #22C55E,
+    #84CC16,
+    #0B6E4F
+  );
+  background-size: 300% 300%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0.15;
+  transition: opacity 0.3s;
+}
+.glow-border-animate:hover::after {
+  opacity: 1;
+  animation: glow-rotate 4s linear infinite;
+}
+
+@keyframes glow-rotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Noise overlay */
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.015;
+}
+</file>
+
+<file path="src/app/layout.tsx">
+import type { Metadata, Viewport } from "next";
+import { Manrope, Inter } from "next/font/google";
+import SmoothScrollProvider from "@/components/SmoothScrollProvider";
+import Preloader from "@/components/Preloader";
+import "./globals.css";
+
+const manrope = Manrope({
+  variable: "--font-manrope",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
+export const metadata: Metadata = {
+  title: "Spoorty Bio Energy | Renewable Energy & Biogas Engineering Company",
+  description: "Enterprise-grade biogas plants, biomethane upgrading, EPC solutions, plant automation, feedstock assessment, and expert operations for sustainable bioenergy.",
+  keywords: ["biogas", "biomethane upgrading", "EPC solutions", "renewable energy", "sustainability", "plant automation", "Spoorty Bio Energy"],
+  authors: [{ name: "Spoorty Bio Energy Team" }],
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="en"
+      className={`${manrope.variable} ${inter.variable} h-full scroll-smooth antialiased`}
+    >
+      <body className="min-h-full flex flex-col font-sans bg-[#F8FAFC] text-[#111827] overflow-x-hidden">
+        <Preloader />
+        <SmoothScrollProvider>
+          {children}
+        </SmoothScrollProvider>
+      </body>
+    </html>
+  );
+}
+</file>
+
+<file path="src/app/page.tsx">
+'use client';
+
+import React, { useRef, useEffect } from 'react';
+import Link from 'next/link';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import ScrollReveal from '@/components/ScrollReveal';
+import Counter from '@/components/Counter';
+import ThreeDTilt from '@/components/ThreeDTilt';
+import BackgroundEffects from '@/components/BackgroundEffects';
+import { motion } from 'framer-motion';
+import { 
+  ArrowRight, Play, Leaf, Cpu, Layers, Wrench, Factory, 
+  CheckCircle2, Flame, Shield, Compass, Sliders, ChevronRight,
+  FlaskConical, Wind, Zap
+} from 'lucide-react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+// Unique, organic leaf divider to replace standard horizontal gray borders
+function UniqueDivider() {
+  return (
+    <div className="relative w-full py-12 overflow-hidden select-none pointer-events-none">
+      <div className="absolute left-[15%] right-[15%] top-1/2 h-[1px] bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center h-10 w-10 rounded-full bg-white border border-primary/20 shadow-md text-primary z-10">
+        <Leaf className="h-4 w-4 text-secondary animate-pulse-slow" />
+      </div>
+    </div>
+  );
+}
+
+export default function HomePage() {
+  const processSectionRef = useRef<HTMLDivElement>(null);
+  const progressBarRef = useRef<HTMLDivElement>(null);
+  const headingRef = useRef<HTMLHeadingElement>(null);
+  const solutionsGridRef = useRef<HTMLDivElement>(null);
+  const sustainabilityHeadingRef = useRef<HTMLHeadingElement>(null);
+  const industriesGridRef = useRef<HTMLDivElement>(null);
+  const whyChooseHeadingRef = useRef<HTMLHeadingElement>(null);
+  const projectsGridRef = useRef<HTMLDivElement>(null);
+  const heroHeadingRef = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Create GSAP context for proper cleanup in React StrictMode
+    const ctx = gsap.context(() => {
+      const section = processSectionRef.current;
+      const progressBar = progressBarRef.current;
+      const heading = headingRef.current;
+      if (!section || !progressBar || !heading) return;
+
+      const nodes = section.querySelectorAll('.process-step-node');
+      const cards = section.querySelectorAll('.process-step-card');
+      if (nodes.length === 0 || cards.length === 0) return;
+
+      // Set initial values
+      gsap.set(progressBar, { width: '0%' });
+      gsap.set(nodes, { 
+        borderColor: '#E5E7EB', 
+        color: '#9CA3AF', 
+        backgroundColor: '#ffffff',
+        boxShadow: 'none',
+        scale: 1 
+      });
+      gsap.set(cards, { opacity: 0, y: 40, scale: 0.95 });
+
+      // Intro Animations
+      const badge = section.querySelector('.process-badge');
+      const desc = section.querySelector('.process-desc');
+      const words = heading.querySelectorAll('.reveal-word');
+
+      const introTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: heading,
+          start: 'top 85%',
+          end: 'bottom 15%',
+          toggleActions: 'play reverse play reverse'
+        }
+      });
+
+      if (badge) {
+        introTl.fromTo(badge, { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out' });
+      }
+      if (words.length > 0) {
+        introTl.fromTo(words, { opacity: 0, y: 15 }, { opacity: 1, y: 0, stagger: 0.05, ease: 'power2.out', duration: 0.5 }, '-=0.2');
+      }
+      if (desc) {
+        introTl.fromTo(desc, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out' }, '-=0.3');
+      }
+
+      // Scroll Storytelling Main Timeline
+      const isMobile = window.matchMedia('(max-width: 768px)').matches;
+      const mainTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 75%',
+          end: 'bottom 40%',
+          scrub: isMobile ? 0.3 : 0.8,
+        }
+      });
+
+      // Animate line progress fill
+      mainTl.to(progressBar, { width: '100%', ease: 'none', duration: 3 });
+
+      // Highlight step nodes and stagger card reveal
+      const count = nodes.length;
+      nodes.forEach((node, idx) => {
+        const position = idx * (3 / (count - 0.5));
+
+        mainTl.to(node, {
+          borderColor: '#22C55E', // Brand Secondary Green
+          backgroundColor: '#0B6E4F', // Brand Primary Green
+          color: '#ffffff',
+          boxShadow: '0 0 25px rgba(34, 197, 94, 0.4)',
+          scale: 1.15,
+          duration: 0.2,
+          ease: 'power1.out',
+        }, position)
+        .to(cards[idx], {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 0.4,
+          ease: 'back.out(1.2)',
+        }, position);
+      });
+
+      // Solutions Grid Stack-Shuffle ScrollTrigger
+      const solContainer = solutionsGridRef.current;
+      if (solContainer && !isMobile) {
+        const solCards = solContainer.querySelectorAll('.solutions-card-inner');
+        if (solCards.length > 0) {
+          // Set initial stacked states at center of the grid container
+          solCards.forEach((card, index) => {
+            const rotation = (index - 2.5) * 5; // staggered rotation
+            const offsetX = (index - 2.5) * 12;
+            const offsetY = index % 2 === 0 ? -15 : 15;
+
+            gsap.set(card, {
+              x: () => {
+                const containerRect = solContainer.getBoundingClientRect();
+                const cardRect = card.getBoundingClientRect();
+                const centerX = containerRect.width / 2 - cardRect.width / 2;
+                const currentX = card.getBoundingClientRect().left - containerRect.left;
+                return centerX - currentX + offsetX;
+              },
+              y: () => {
+                const containerRect = solContainer.getBoundingClientRect();
+                const cardRect = card.getBoundingClientRect();
+                const centerY = containerRect.height / 3 - cardRect.height / 2;
+                const currentY = card.getBoundingClientRect().top - containerRect.top;
+                return centerY - currentY + offsetY;
+              },
+              rotation: rotation,
+              scale: 0.92,
+              z: -50,
+            });
+          });
+
+          const solTl = gsap.timeline({
+            scrollTrigger: {
+              trigger: solContainer,
+              start: 'top 85%',
+              end: 'top 35%',
+              scrub: 1.2,
+            }
+          });
+
+          solTl.to(solCards, {
+            x: (i) => (i % 2 === 0 ? -100 : 100),
+            rotation: (i) => (i % 2 === 0 ? -12 : 12),
+            scale: 0.95,
+            duration: 0.4,
+            stagger: 0.05,
+          })
+          .to(solCards, {
+            x: 0,
+            y: 0,
+            rotation: 0,
+            scale: 1,
+            z: 0,
+            duration: 0.8,
+            ease: 'power2.out',
+            stagger: 0.05,
+          });
+        }
+      }
+
+      // Sustainability Heading Letter Spacing Animation
+      const sustHeading = sustainabilityHeadingRef.current;
+      if (sustHeading) {
+        gsap.fromTo(sustHeading, 
+          {
+            letterSpacing: '0.25em',
+            filter: 'blur(6px)',
+            opacity: 0,
+          },
+          {
+            letterSpacing: '-0.02em',
+            filter: 'blur(0px)',
+            opacity: 1,
+            duration: 1.2,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: sustHeading,
+              start: 'top 85%',
+              end: 'bottom 15%',
+              toggleActions: 'play reverse play reverse'
+            }
+          }
+        );
+      }
+
+      // Industries Grid Rotation Reveal on Scroll
+      const indContainer = industriesGridRef.current;
+      if (indContainer) {
+        const indCards = indContainer.querySelectorAll('.industries-card-inner');
+        if (indCards.length > 0) {
+          gsap.fromTo(indCards, 
+            {
+              opacity: 0,
+              scale: 0.85,
+              rotation: (i) => (i % 2 === 0 ? -12 : 12),
+              y: 50
+            },
+            {
+              opacity: 1,
+              scale: 1,
+              rotation: 0,
+              y: 0,
+              duration: 1.0,
+              ease: 'back.out(1.4)',
+              stagger: 0.08,
+              scrollTrigger: {
+                trigger: indContainer,
+                start: 'top 85%',
+                end: 'bottom 15%',
+                toggleActions: 'play reverse play reverse'
+              }
+            }
+          );
+        }
+      }
+
+      // Why Choose Heading character wave reveal
+      const whyHeading = whyChooseHeadingRef.current;
+      if (whyHeading) {
+        const chars = whyHeading.querySelectorAll('.reveal-char');
+        if (chars.length > 0) {
+          gsap.fromTo(chars, 
+            {
+              y: 20,
+              scaleY: 0.6,
+              opacity: 0,
+            },
+            {
+              y: 0,
+              scaleY: 1,
+              opacity: 1,
+              duration: 0.6,
+              ease: 'power2.out',
+              stagger: 0.02,
+              scrollTrigger: {
+                trigger: whyHeading,
+                start: 'top 85%',
+                end: 'bottom 15%',
+                toggleActions: 'play reverse play reverse'
+              }
+            }
+          );
+        }
+      }
+
+      // Projects Grid Card Fan ScrollTrigger
+      const projContainer = projectsGridRef.current;
+      if (projContainer && !isMobile) {
+        const projCards = projContainer.querySelectorAll('.project-card-inner');
+        if (projCards.length > 0) {
+          projCards.forEach((card, index) => {
+            // Staggered fan angles: Card 1 (-12deg), Card 2 (0deg), Card 3 (12deg)
+            const initialRotation = (index - 1) * 12;
+            const offsetX = (index - 1) * 15;
+
+            gsap.set(card, {
+              x: () => {
+                const containerRect = projContainer.getBoundingClientRect();
+                const cardRect = card.getBoundingClientRect();
+                const centerX = containerRect.width / 2 - cardRect.width / 2;
+                const currentX = card.getBoundingClientRect().left - projContainer.getBoundingClientRect().left;
+                return centerX - currentX + offsetX;
+              },
+              y: 20,
+              rotation: initialRotation,
+              scale: 0.94,
+              z: -30,
+              opacity: 0,
+            });
+          });
+
+          const projTl = gsap.timeline({
+            scrollTrigger: {
+              trigger: projContainer,
+              start: 'top 85%',
+              end: 'top 45%',
+              scrub: 1.0,
+            }
+          });
+
+          projTl.to(projCards, {
+            x: 0,
+            y: 0,
+            rotation: 0,
+            scale: 1,
+            z: 0,
+            opacity: 1,
+            duration: 1.0,
+            ease: 'power2.out',
+            stagger: 0.08,
+          });
+        }
+      }
+
+      // Hero Heading character wave reveal
+      const heroHeading = heroHeadingRef.current;
+      if (heroHeading) {
+        const chars = heroHeading.querySelectorAll('.hero-reveal-char');
+        if (chars.length > 0) {
+          gsap.fromTo(chars, 
+            {
+              y: 25,
+              scaleY: 0.5,
+              opacity: 0,
+            },
+            {
+              y: 0,
+              scaleY: 1,
+              opacity: 1,
+              duration: 0.7,
+              ease: 'power2.out',
+              stagger: 0.015,
+              scrollTrigger: {
+                trigger: heroHeading,
+                start: 'top 95%',
+                end: 'bottom 15%',
+                toggleActions: 'play reverse play reverse'
+              }
+            }
+          );
+        }
+      }
+
+    }, processSectionRef); // scope to process section container
+
+    return () => ctx.revert();
+  }, []);
+
+  return (
+    <>
+      <Navbar />
+
+      <main className="flex-grow bg-[#F8FAFC]">
+        {/* ==========================================
+            HERO SECTION
+            ========================================== */}
+        <section className="relative min-h-screen flex flex-col justify-between pt-32 pb-12 bg-[#F8FAFC] text-dark overflow-hidden">
+          {/* Canvas Background Particles */}
+          <BackgroundEffects />
+
+          {/* Subtle Grid overlay for texture */}
+          <div className="absolute inset-0 bg-grid-pattern opacity-5" />
+
+          {/* Floating background blobs */}
+          <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-secondary/5 rounded-full blur-[120px] pointer-events-none animate-pulse-slow"></div>
+          <div className="absolute bottom-1/4 right-1/10 w-[350px] h-[350px] bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+          <div className="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10 w-full flex-grow flex items-center mt-8 lg:mt-0">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 w-full items-center">
+              {/* Left Content */}
+              <div className="lg:col-span-6 flex flex-col items-start text-left">
+                {/* Badge */}
+                <ScrollReveal yOffset={-15} duration={0.5}>
+                  <div className="inline-flex items-center gap-1.5 bg-primary/5 border border-primary/20 py-1.5 px-3 rounded-full text-primary text-xs font-semibold uppercase tracking-wider mb-6">
+                    <Leaf className="h-3.5 w-3.5" />
+                    <span>🌿 Sustainable Energy Solutions</span>
+                  </div>
+                </ScrollReveal>
+
+                {/* Main Heading */}
+                <h1 ref={heroHeadingRef} className="font-heading font-extrabold text-4xl sm:text-5xl md:text-6xl leading-[1.15] mb-6 tracking-tight max-w-2xl text-[#0B1E18] select-none">
+                  {"Building A".split(' ').map((word, wordIdx) => (
+                    <span key={`p1-w-${wordIdx}`} className="inline-block whitespace-nowrap">
+                      {word.split('').map((char, charIdx) => (
+                        <span key={`p1-c-${wordIdx}-${charIdx}`} className="hero-reveal-char inline-block origin-bottom opacity-0">
+                          {char}
+                        </span>
+                      ))}
+                    </span>
+                  )).reduce((acc, curr, i) => i === 0 ? [curr] : [...acc, " ", curr], [] as any[])}
+                  {" "}
+                  <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent inline-block">
+                    {"Greener".split('').map((char, charIdx) => (
+                      <span key={`p2-c-${charIdx}`} className="hero-reveal-char inline-block origin-bottom opacity-0">
+                        {char}
+                      </span>
+                    ))}
+                  </span>
+                  {" "}
+                  {"Future With Clean Energy".split(' ').map((word, wordIdx) => (
+                    <span key={`p3-w-${wordIdx}`} className="inline-block whitespace-nowrap">
+                      {word.split('').map((char, charIdx) => (
+                        <span key={`p3-c-${wordIdx}-${charIdx}`} className="hero-reveal-char inline-block origin-bottom opacity-0">
+                          {char}
+                        </span>
+                      ))}
+                    </span>
+                  )).reduce((acc, curr, i) => i === 0 ? [curr] : [...acc, " ", curr], [] as any[])}
+                </h1>
+
+                {/* Description */}
+                <ScrollReveal delay={0.15} yOffset={20} duration={0.6}>
+                  <p className="font-sans text-base sm:text-lg md:text-xl text-gray-500 mb-8 max-w-md leading-relaxed">
+                    Innovative biogas and biomethane solutions for a sustainable and carbon-neutral world.
+                  </p>
+                </ScrollReveal>
+
+                {/* Buttons */}
+                <ScrollReveal delay={0.25} yOffset={20} duration={0.6}>
+                  <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
+                    <Link 
+                      href="/contact" 
+                      className="shine-effect inline-flex items-center justify-center bg-primary hover:bg-primary/95 text-white font-sans font-semibold py-3.5 px-7 rounded-xl transition-all duration-200 shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 text-center"
+                    >
+                      Get Consultation
+                    </Link>
+                    <Link 
+                      href="/solutions" 
+                      className="shine-effect inline-flex items-center justify-center bg-transparent hover:bg-primary/5 text-primary font-sans font-semibold py-3.5 px-7 rounded-xl transition-all duration-200 border border-primary/20 hover:border-primary/45 active:scale-95 text-center"
+                    >
+                      Explore Solutions
+                    </Link>
+                  </div>
+                </ScrollReveal>
+              </div>
+
+              {/* Right Circular Illustration */}
+              <div className="lg:col-span-6 flex items-center justify-center relative select-none perspective-1000">
+                <ScrollReveal scaleOffset={0.9} duration={0.8} delay={0.15}>
+                  <ThreeDTilt maxRotate={15} className="rounded-full" overflowHidden={false}>
+                    <div className="relative w-full aspect-square max-w-[450px] lg:max-w-[480px] mx-auto preserve-3d">
+                      {/* Decorative Outer Rings */}
+                      <div className="absolute inset-0 bg-[#E0F2FE]/40 rounded-full animate-pulse-slow" style={{ transform: 'translateZ(20px) scale(0.95)' }}></div>
+                      <div className="absolute inset-0 bg-primary/5 rounded-full" style={{ transform: 'translateZ(10px) scale(1.02)' }}></div>
+                      
+                      {/* Circular Image Container */}
+                      <div className="relative w-full h-full rounded-full overflow-hidden border-8 border-white shadow-2xl" style={{ transform: 'translateZ(45px)' }}>
+                        <img 
+                          src="/images/hero_illustration.jpg" 
+                          alt="Bioenergy Facilities Illustration" 
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
+                  </ThreeDTilt>
+                </ScrollReveal>
+              </div>
+            </div>
+          </div>
+
+          {/* Elegant SVG Leaves Overlay at Bottom Center */}
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[420px] h-36 pointer-events-none opacity-50 z-20">
+            <svg viewBox="0 0 400 120" className="w-full h-full fill-current text-primary/30">
+              <path d="M200,120 C180,80 140,60 100,70 C140,50 170,70 190,100 C195,80 180,40 150,20 C180,30 200,60 200,90 C200,60 220,30 250,20 C220,40 205,80 210,100 C230,70 260,50 300,70 C260,60 220,80 200,120 Z" />
+            </svg>
+          </div>
+        </section>
+
+        {/* Bottom Feature Strip (Statistics)
+        <div className="w-full border-y border-gray-100 bg-white py-10 relative z-10">
+          <div className="max-w-[1440px] mx-auto px-6 md:px-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              {[
+                {
+                  value: 500,
+                  suffix: '+',
+                  title: 'Projects Delivered',
+                  desc: 'Successful clean energy installations'
+                },
+                {
+                  value: 98,
+                  suffix: '%',
+                  title: 'Plant Efficiency',
+                  desc: 'High biological process uptime'
+                },
+                {
+                  value: 100,
+                  suffix: 'K+',
+                  title: 'Tons Waste Processed',
+                  desc: 'Organic biomass recycled safely'
+                },
+                {
+                  value: 50,
+                  suffix: ' MW+',
+                  title: 'Energy Generated',
+                  desc: 'Renewable power and Bio-CNG produced'
+                }
+              ].map((stat, i) => (
+                <div key={i} className="flex gap-4 p-4 rounded-2xl bg-[#F8FAFC] hover:bg-white hover:shadow-lg border border-gray-100 hover:border-primary/10 transition-all duration-300">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-primary/10 text-primary shrink-0 font-heading font-extrabold text-lg">
+                    <Counter value={stat.value} suffix={stat.suffix} />
+                  </div>
+                  <div>
+                    <h4 className="font-heading font-bold text-sm text-dark">{stat.title}</h4>
+                    <p className="font-sans text-xs text-gray-500 mt-1 leading-relaxed">{stat.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div> */}
+
+        <UniqueDivider />
+
+        {/* ==========================================
+            2ND SECTION: PROCESS SECTION (MOVED UP)
+            ========================================== */}
+        <section ref={processSectionRef} className="relative py-24 bg-white overflow-hidden z-10">
+          {/* Floating Background Effects (Leaves) */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-[0.06] z-0">
+            <div className="absolute top-[10%] left-[5%] animate-float" style={{ animationDelay: '0s' }}>
+              <Leaf className="h-8 w-8 text-primary" />
+            </div>
+            <div className="absolute top-[25%] right-[8%] animate-float" style={{ animationDelay: '1.5s' }}>
+              <Leaf className="h-6 w-6 text-secondary" />
+            </div>
+            <div className="absolute bottom-[20%] left-[12%] animate-float" style={{ animationDelay: '3s' }}>
+              <Leaf className="h-7 w-7 text-primary" />
+            </div>
+            <div className="absolute bottom-[10%] right-[15%] animate-float" style={{ animationDelay: '4.5s' }}>
+              <Leaf className="h-5 w-5 text-secondary" />
+            </div>
+          </div>
+
+          <div className="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10">
+            {/* Header */}
+            <div className="text-center max-w-3xl mx-auto mb-20 select-none">
+              <span className="process-badge text-secondary font-sans text-xs font-bold uppercase tracking-widest mb-3 block opacity-0">
+                Our Process
+              </span>
+              <h2 ref={headingRef} className="process-heading font-heading font-extrabold text-3xl md:text-4xl lg:text-5xl text-dark mb-4">
+                {"From Waste to Clean Energy".split(' ').map((word, i) => (
+                  <span key={i} className="inline-block mr-2 opacity-0 reveal-word">
+                    {word}
+                  </span>
+                ))}
+              </h2>
+              <p className="process-desc font-sans text-base md:text-lg text-gray-500 opacity-0">
+                We employ a structured engineering and biological methodology to capture, digest, upgrade, and distribute clean renewable bioenergy.
+              </p>
+            </div>
+
+            {/* Timeline Container (6 Columns) */}
+            <div className="relative min-w-[1000px] lg:min-w-0 py-8">
+              {/* Connecting Line Track */}
+              <div className="absolute top-16 left-[8.3%] right-[8.3%] h-1 bg-gray-100 -z-10 rounded-full overflow-hidden">
+                {/* Glowing Line Fill */}
+                <div 
+                  ref={progressBarRef} 
+                  className="h-full bg-gradient-to-r from-primary to-secondary w-0 origin-left"
+                />
+              </div>
+
+              <div className="grid grid-cols-6 gap-6 relative z-10">
+                {[
+                  { num: '01', title: 'Waste Collection', desc: 'Sourcing agricultural residue, food waste, and organic biomass.', icon: Leaf },
+                  { num: '02', title: 'Waste Processing', desc: 'Substrate mechanical processing and slurry formulation.', icon: Sliders },
+                  { num: '03', title: 'Anaerobic Digestion', desc: 'Biological fermentation in heating digesters with mixing.', icon: FlaskConical },
+                  { num: '04', title: 'Biogas Production', desc: 'Continuous production of raw methane gas.', icon: Flame },
+                  { num: '05', title: 'Biomethane Purification', desc: 'Purifying biogas to 99% pure compressed biomethane.', icon: Wind },
+                  { num: '06', title: 'Energy Distribution', desc: 'Injecting upgraded biomethane to grid or cylinder bottling.', icon: Zap }
+                ].map((step, idx) => (
+                  <div key={idx} className="group/step flex flex-col items-center text-center">
+                    {/* Step Marker Circle */}
+                    <div 
+                      className="process-step-node relative flex items-center justify-center h-16 w-16 rounded-full bg-white border-2 border-gray-200 text-gray-400 shadow-sm transition-all duration-300 z-10 group-hover/step:scale-115"
+                      style={{ willChange: 'transform, border-color, box-shadow, background-color, color' }}
+                    >
+                      <step.icon className="h-6 w-6 step-icon transition-transform duration-300 group-hover/step:rotate-12" />
+                    </div>
+
+                    {/* Step Card */}
+                    <div 
+                      className="process-step-card opacity-0 mt-8 w-full h-full"
+                      style={{ willChange: 'opacity, transform' }}
+                    >
+                      <ThreeDTilt maxRotate={5} className="h-full rounded-2xl">
+                        <div className="bg-white border border-gray-100 group-hover/step:border-primary/30 p-6 rounded-2xl shadow-sm group-hover/step:shadow-xl group-hover/step:-translate-y-2 transition-all duration-300 flex flex-col items-center h-full">
+                          {/* Step Number Tag */}
+                          <span className="font-heading font-extrabold text-xs text-secondary tracking-widest uppercase mb-3 block">
+                            Step {step.num}
+                          </span>
+                          
+                          {/* Title */}
+                          <h4 className="font-heading font-bold text-base text-dark mb-2">
+                            {step.title}
+                          </h4>
+                          
+                          {/* Description */}
+                          <p className="font-sans text-xs text-gray-500 leading-relaxed">
+                            {step.desc}
+                          </p>
+                        </div>
+                      </ThreeDTilt>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <UniqueDivider />
+
+        {/* ==========================================
+            4TH SECTION: SOLUTIONS SECTION
+            ========================================== */}
+        <section className="py-24 bg-white">
+          <div className="max-w-[1440px] mx-auto px-6 md:px-12">
+            {/* Header */}
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <ScrollReveal>
+                <span className="text-secondary font-sans text-xs font-bold uppercase tracking-widest mb-3 block">
+                  Our Solutions
+                </span>
+                <h2 className="font-heading font-extrabold text-3xl md:text-4xl lg:text-5xl text-dark mb-4">
+                  Advanced Bioenergy Technologies
+                </h2>
+                <p className="font-sans text-base md:text-lg text-gray-500">
+                  Providing complete, state-of-the-art engineering designs and biological process solutions to close the organic waste loop.
+                </p>
+              </ScrollReveal>
+            </div>
+
+            {/* Services Grid (6 Cards with Stack Shuffle & 3D Tilt) */}
+            <div 
+              ref={solutionsGridRef}
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            >
+              {[
+                {
+                  icon: Factory,
+                  title: 'Biogas Plant Design',
+                  desc: 'Engineering, construction, and commissioning of high-performance industrial and agricultural biogas plants.',
+                  href: '/solutions'
+                },
+                {
+                  icon: Flame,
+                  title: 'Bio-CNG Production',
+                  desc: 'Clean transportation fuel matching compressed natural gas standards for automotive and fleet utilities.',
+                  href: '/solutions'
+                },
+                {
+                  icon: Leaf,
+                  title: 'Biomethane Upgradation',
+                  desc: 'Advanced membrane separation and purification technology to upgrade raw biogas to gas grid injection spec.',
+                  href: '/solutions'
+                },
+                {
+                  icon: Sliders,
+                  title: 'Organic Waste Management',
+                  desc: 'Efficient material sorting, treatment, pasteurization, and digestate handling for biological processing.',
+                  href: '/solutions'
+                },
+                {
+                  icon: Cpu,
+                  title: 'Industrial Energy Solutions',
+                  desc: 'Co-generation (CHP) systems and custom steam boiler conversions to offset factory fossil fuel use.',
+                  href: '/solutions'
+                },
+                {
+                  icon: Wrench,
+                  title: 'Operation & Maintenance',
+                  desc: 'Preventative engineering servicing, remote monitoring, and biological support to guarantee 98%+ plant uptime.',
+                  href: '/solutions'
+                }
+              ].map((service, index) => (
+                <div 
+                  key={index} 
+                  className="h-full"
+                >
+                  <ThreeDTilt maxRotate={8} className="h-full rounded-3xl">
+                    <div className="solutions-card-inner group relative bg-[#F8FAFC] hover:bg-white p-8 rounded-3xl border border-gray-100 hover:border-primary/20 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-full glow-border-animate shine-effect">
+                      <div>
+                        {/* Icon */}
+                        <div className="flex items-center justify-center h-14 w-14 rounded-2xl bg-white group-hover:bg-primary/10 text-primary group-hover:text-secondary shadow-sm transition-all mb-8 border border-gray-100">
+                          <service.icon className="h-7 w-7" />
+                        </div>
+                        
+                        {/* Title */}
+                        <h3 className="font-heading font-bold text-xl text-dark mb-4 group-hover:text-primary transition-colors">
+                          {service.title}
+                        </h3>
+                        
+                        {/* Description */}
+                        <p className="font-sans text-sm text-gray-500 leading-relaxed mb-8">
+                          {service.desc}
+                        </p>
+                      </div>
+
+                      {/* Action Link */}
+                      <Link 
+                        href={service.href} 
+                        className="inline-flex items-center gap-1 text-sm font-semibold text-primary group-hover:text-secondary transition-colors"
+                      >
+                        <span>Learn More</span>
+                        <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                      </Link>
+                    </div>
+                  </ThreeDTilt>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <UniqueDivider />
+
+        {/* ==========================================
+            5TH SECTION: SUSTAINABILITY SECTION
+            ========================================== */}
+        <section className="py-24 max-w-[1440px] mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            {/* Left Content */}
+            <div className="lg:col-span-5 flex flex-col items-start">
+              <ScrollReveal>
+                <span className="text-secondary font-sans text-xs font-bold uppercase tracking-widest mb-3 block">
+                  Sustainability
+                </span>
+                <h2 ref={sustainabilityHeadingRef} className="font-heading font-extrabold text-3xl md:text-4xl lg:text-5xl text-dark leading-tight mb-6 opacity-0">
+                  Creating a Greener Future Through Bio Energy
+                </h2>
+                <p className="font-sans text-base md:text-lg text-gray-500 leading-relaxed">
+                  Every Spoorty Bio Energy project contributes toward reducing carbon emissions, recycling organic waste, and promoting circular economy principles. We track our impact continuously.
+                </p>
+              </ScrollReveal>
+            </div>
+
+            {/* Right Metrics Grid */}
+            <div className="lg:col-span-7">
+              <ScrollReveal>
+                <div className="relative rounded-3xl bg-dark text-white p-8 md:p-12 overflow-hidden shadow-2xl border border-primary/20">
+                  <div className="absolute inset-0 bg-grid-pattern opacity-5" />
+                  <div className="absolute top-0 right-0 w-80 h-80 bg-primary/20 rounded-full blur-[100px] pointer-events-none" />
+                  
+                  <div className="relative z-10 grid grid-cols-1 sm:grid-cols-3 gap-8">
+                    {[
+                      { value: 250, suffix: 'K+', label: 'CO₂ Emissions Reduced (Tons)' },
+                      { value: 100, suffix: 'K+', label: 'Tons Organic Waste Recycled' },
+                      { value: 50, suffix: ' MW+', label: 'Renewable Energy Generated' }
+                    ].map((metric, idx) => (
+                      <div key={idx} className="flex flex-col items-center justify-center text-center py-4">
+                        <span className="font-heading font-extrabold text-3xl md:text-4xl text-secondary mb-2 tracking-tight">
+                          <Counter value={metric.value} suffix={metric.suffix} />
+                        </span>
+                        <span className="font-sans text-xs md:text-sm text-gray-400 font-medium leading-tight max-w-[160px]">
+                          {metric.label}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </ScrollReveal>
+            </div>
+          </div>
+        </section>
+
+        <UniqueDivider />
+
+        {/* ==========================================
+            6TH SECTION: INDUSTRIES SECTION
+            ========================================== */}
+        <section className="py-24 bg-[#F8FAFC]">
+          <div className="max-w-[1440px] mx-auto px-6 md:px-12">
+            {/* Header */}
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <ScrollReveal>
+                <span className="text-secondary font-sans text-xs font-bold uppercase tracking-widest mb-3 block">
+                  Industries We Serve
+                </span>
+                <h2 className="font-heading font-extrabold text-3xl md:text-4xl lg:text-5xl text-dark mb-4">
+                  Tailored Solutions for Diverse Sectors
+                </h2>
+                <p className="font-sans text-base md:text-lg text-gray-500">
+                  Providing sustainable bioenergy energy infrastructure across agriculture, municipal corporations, and industrial sectors.
+                </p>
+              </ScrollReveal>
+            </div>
+
+            {/* Grid layout */}
+            <div ref={industriesGridRef} className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {[
+                { name: 'Agriculture', icon: Leaf },
+                { name: 'Food Processing', icon: Factory },
+                { name: 'Municipal Waste', icon: Shield },
+                { name: 'Dairy Farms', icon: Flame },
+                { name: 'Sugar Industries', icon: Layers },
+                { name: 'Distilleries', icon: Sliders },
+                { name: 'Industrial Manufacturing', icon: Cpu },
+                { name: 'Smart Cities', icon: Compass }
+              ].map((ind, index) => (
+                <div key={index} className="h-full">
+                  <ThreeDTilt maxRotate={5} className="rounded-2xl h-full">
+                    <div className="industries-card-inner p-6 rounded-2xl bg-white border border-gray-100 hover:border-primary/20 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col items-center justify-center text-center h-full opacity-0">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-primary/5 text-primary mb-4 shrink-0">
+                        <ind.icon className="h-6 w-6" />
+                      </div>
+                      <h4 className="font-heading font-bold text-sm text-dark">{ind.name}</h4>
+                    </div>
+                  </ThreeDTilt>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <UniqueDivider />
+
+        {/* ==========================================
+            7TH SECTION: WHY CHOOSE US SECTION
+            ========================================== */}
+        <section className="relative py-24 bg-white overflow-hidden z-10">
+          {/* Floating Objects */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-[0.06] z-0">
+            <div className="absolute top-[15%] left-[8%] animate-float" style={{ animationDelay: '0.5s' }}>
+              <Layers className="h-10 w-10 text-primary" />
+            </div>
+            <div className="absolute top-[40%] right-[10%] animate-float" style={{ animationDelay: '2.5s' }}>
+              <Cpu className="h-8 w-8 text-secondary" />
+            </div>
+            <div className="absolute bottom-[20%] left-[5%] animate-float" style={{ animationDelay: '1s' }}>
+              <Flame className="h-12 w-12 text-primary" />
+            </div>
+            <div className="absolute bottom-[10%] right-[6%] animate-float" style={{ animationDelay: '4s' }}>
+              <Zap className="h-9 w-9 text-secondary" />
+            </div>
+          </div>
+
+          <div className="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+              {/* Left Image */}
+              <div className="lg:col-span-6">
+                <ScrollReveal>
+                  <ThreeDTilt maxRotate={5} className="rounded-3xl border border-gray-200 shadow-2xl">
+                    <div className="relative h-[400px] md:h-[450px] w-full overflow-hidden">
+                      <img 
+                        src="/images/engineer.jpg" 
+                        alt="Advanced Bioenergy Engineering" 
+                        className="object-cover h-full w-full"
+                      />
+                      <div className="absolute inset-0 bg-dark/15" />
+                    </div>
+                  </ThreeDTilt>
+                </ScrollReveal>
+              </div>
+
+              {/* Right Content */}
+              <div className="lg:col-span-6">
+                <ScrollReveal>
+                  <span className="text-secondary font-sans text-xs font-bold uppercase tracking-widest mb-3 block">
+                    Why Choose Spoorty
+                  </span>
+                  <h2 ref={whyChooseHeadingRef} className="font-heading font-extrabold text-3xl md:text-4xl text-dark leading-tight mb-6 select-none">
+                    {"Pioneering High-Efficiency Bioenergy Solutions".split(' ').map((word, wordIdx) => (
+                      <span key={`why-w-${wordIdx}`} className="inline-block whitespace-nowrap">
+                        {word.split('').map((char, charIdx) => (
+                          <span key={`why-c-${wordIdx}-${charIdx}`} className="inline-block reveal-char origin-bottom opacity-0">
+                            {char}
+                          </span>
+                        ))}
+                      </span>
+                    )).reduce((acc, curr, i) => i === 0 ? [curr] : [...acc, " ", curr], [] as any[])}
+                  </h2>
+                  
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {[
+                      { title: '98% Plant Efficiency', desc: 'Optimized process design guarantees maximum uptime and methane yield.' },
+                      { title: 'Advanced Engineering', desc: 'Detailed 3D design plans, fluid dynamics simulation, and strict sizing.' },
+                      { title: 'Sustainable Technologies', desc: 'Patented gas membrane purification systems reducing emissions.' },
+                      { title: '24/7 Technical Support', desc: 'Smart PLC telemetry alerts and biological advice round the clock.' },
+                      { title: 'Experienced Professionals', desc: 'A dedicated team of senior energy engineers, scientists, and planners.' },
+                      { title: 'Environment Friendly', desc: 'Full compliance with regional environmental standards and zero discharge.' }
+                    ].map((item, idx) => (
+                      <div key={idx} className="flex gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                        <div>
+                          <h4 className="font-heading font-bold text-sm text-dark">{item.title}</h4>
+                          <p className="font-sans text-xs text-gray-500 mt-1 leading-relaxed">{item.desc}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </ScrollReveal>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <UniqueDivider />
+
+        {/* ==========================================
+            8TH SECTION: PROJECTS PREVIEW SECTION
+            ========================================== */}
+        <section className="py-24 bg-[#F8FAFC]">
+          <div className="max-w-[1440px] mx-auto px-6 md:px-12">
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+              <div className="max-w-2xl">
+                <ScrollReveal>
+                  <span className="text-secondary font-sans text-xs font-bold uppercase tracking-widest mb-3 block">
+                    Featured Work
+                  </span>
+                  <h2 className="font-heading font-extrabold text-3xl md:text-4xl text-dark mb-4">
+                    Our Bio Energy Projects
+                  </h2>
+                  <p className="font-sans text-base text-gray-500">
+                    Delivering sustainable energy infrastructure across agriculture, municipalities, and industrial sectors.
+                  </p>
+                </ScrollReveal>
+              </div>
+              <ScrollReveal>
+                <Link 
+                  href="/projects" 
+                  className="shine-effect inline-flex items-center gap-1.5 bg-primary hover:bg-primary/95 text-white font-sans text-sm font-semibold py-3 px-6 rounded-xl transition-all duration-200 shadow-md shadow-primary/20 hover:scale-[1.02] active:scale-95 text-center shrink-0"
+                >
+                  <span>View All Projects</span>
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </ScrollReveal>
+            </div>
+
+            <div ref={projectsGridRef} className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[
+                {
+                  id: 1,
+                  image: '/images/hero.jpg',
+                  title: '75 TPD Biogas Plant',
+                  category: 'Dairy',
+                  location: 'Punjab, India',
+                  capacity: '75 Tons Per Day'
+                },
+                {
+                  id: 2,
+                  image: '/images/biomethane.jpg',
+                  title: '50 TPD Biomethane Upgrading',
+                  category: 'Industrial',
+                  location: 'Maharashtra, India',
+                  capacity: '50 Tons Per Day'
+                },
+                {
+                  id: 3,
+                  image: '/images/about.jpg',
+                  title: '100 TPD High-Rate Digester',
+                  category: 'Sugar & Distillery',
+                  location: 'Uttar Pradesh, India',
+                  capacity: '100 Tons Per Day'
+                }
+              ].map((proj, idx) => (
+                <div key={proj.id} className="h-full">
+                  <ThreeDTilt maxRotate={5} className="rounded-3xl h-full">
+                    <div className="project-card-inner bg-white rounded-3xl overflow-hidden border border-gray-100 hover:border-primary/20 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col justify-between group opacity-0">
+                      <div className="relative h-48 overflow-hidden shrink-0">
+                        <img 
+                          src={proj.image} 
+                          alt={proj.title} 
+                          className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-dark/20" />
+                        <div className="absolute top-4 left-4 bg-secondary text-white font-sans text-xs font-bold py-1 px-3.5 rounded-full shadow-md">
+                          {proj.category}
+                        </div>
+                      </div>
+                      <div className="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                          <h4 className="font-heading font-bold text-lg text-dark mb-1 group-hover:text-primary transition-colors">
+                            {proj.title}
+                          </h4>
+                          <p className="font-sans text-xs text-gray-400 mb-4">{proj.location}</p>
+                        </div>
+                        <div className="border-t border-gray-100 pt-4 flex justify-between text-xs font-sans text-gray-500">
+                          <span>Capacity</span>
+                          <span className="font-bold text-dark">{proj.capacity}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </ThreeDTilt>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <UniqueDivider />
+
+        {/* ==========================================
+            9TH SECTION: CALL TO ACTION SECTION
+            ========================================== */}
+        <section className="py-16 max-w-[1440px] mx-auto px-6 md:px-12">
+          <ScrollReveal>
+            <div 
+              className="relative rounded-3xl bg-dark text-white p-8 md:p-20 overflow-hidden shadow-2xl border border-primary/20 bg-cover bg-center"
+              style={{ backgroundImage: "url('/images/hero.jpg')" }}
+            >
+              {/* Dark Green Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-r from-dark/95 via-dark/90 to-primary/80" />
+              <div className="absolute inset-0 bg-grid-pattern opacity-10" />
+
+              <div className="relative z-10 max-w-2xl text-left">
+                <h2 className="font-heading font-extrabold text-3xl md:text-5xl leading-tight mb-6 text-white">
+                  Ready to Build a Sustainable Future?
+                </h2>
+                <p className="font-sans text-base md:text-lg text-gray-300 mb-8 leading-relaxed">
+                  Partner with Spoorty Bio Energy for innovative bioenergy solutions that transform waste into valuable renewable resources.
+                </p>
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                  <Link 
+                    href="/contact" 
+                    className="inline-flex items-center justify-center bg-secondary hover:bg-secondary/90 text-white font-sans font-semibold py-3.5 px-7 rounded-xl transition-all duration-200 shadow-lg shadow-secondary/20 hover:scale-[1.02] active:scale-95 text-center"
+                  >
+                    Contact Us
+                  </Link>
+                  <Link 
+                    href="/contact" 
+                    className="inline-flex items-center justify-center bg-transparent hover:bg-white/10 text-white font-sans font-semibold py-3.5 px-7 rounded-xl transition-all duration-200 border border-white/30 hover:border-white/50 active:scale-95 text-center"
+                  >
+                    Schedule Consultation
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </ScrollReveal>
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  );
+}
+</file>
+
+<file path="src/components/BackgroundEffects.tsx">
+'use client';
+
+import React, { useEffect, useRef } from 'react';
+
+interface Particle {
+  x: number;
+  y: number;
+  vx: number;
+  vy: number;
+  size: number;
+  alpha: number;
+  decay?: number;
+}
+
+interface Orb {
+  x: number;
+  y: number;
+  vx: number;
+  vy: number;
+  radius: number;
+  targetRadius: number;
+}
+
+interface Leaf {
+  x: number;
+  y: number;
+  vx: number;
+  vy: number;
+  size: number;
+  angle: number;
+  spin: number;
+}
+
+export default function BackgroundEffects() {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const mouseRef = useRef({ x: -1000, y: -1000 });
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    let animationFrameId: number;
+    let width = (canvas.width = window.innerWidth);
+    let height = (canvas.height = window.innerHeight);
+
+    // Initialize lists of objects
+    const orbs: Orb[] = [];
+    const leaves: Leaf[] = [];
+    const particles: Particle[] = [];
+
+    // Create 4 large slow-moving glowing orbs
+    for (let i = 0; i < 4; i++) {
+      orbs.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        vx: (Math.random() - 0.5) * 0.4,
+        vy: (Math.random() - 0.5) * 0.4,
+        radius: Math.random() * 150 + 100,
+        targetRadius: Math.random() * 150 + 100,
+      });
+    }
+
+    // Create 8 floating leaves
+    for (let i = 0; i < 8; i++) {
+      leaves.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        vx: (Math.random() - 0.5) * 0.3 + 0.1, // slightly drifting right
+        vy: Math.random() * 0.2 + 0.1,         // drifting down
+        size: Math.random() * 12 + 8,
+        angle: Math.random() * Math.PI * 2,
+        spin: (Math.random() - 0.5) * 0.01,
+      });
+    }
+
+    // Create 25 background energy dots
+    for (let i = 0; i < 25; i++) {
+      particles.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        vx: (Math.random() - 0.5) * 0.5,
+        vy: (Math.random() - 0.5) * 0.5,
+        size: Math.random() * 2 + 1,
+        alpha: Math.random() * 0.5 + 0.1,
+      });
+    }
+
+    const handleResize = () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    };
+
+    const handleMouseMove = (e: MouseEvent) => {
+      mouseRef.current.x = e.clientX;
+      mouseRef.current.y = e.clientY;
+    };
+
+    const handleMouseLeave = () => {
+      mouseRef.current.x = -1000;
+      mouseRef.current.y = -1000;
+    };
+
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('mousemove', handleMouseMove);
+    canvas.addEventListener('mouseleave', handleMouseLeave);
+
+    const drawLeaf = (c: CanvasRenderingContext2D, x: number, y: number, size: number, angle: number) => {
+      c.save();
+      c.translate(x, y);
+      c.rotate(angle);
+      c.beginPath();
+      // Draw standard leaf path
+      c.moveTo(0, -size);
+      c.quadraticCurveTo(size / 1.8, -size / 2, 0, size);
+      c.quadraticCurveTo(-size / 1.8, -size / 2, 0, -size);
+      c.fillStyle = 'rgba(34, 197, 94, 0.08)'; // translucent secondary green
+      c.fill();
+      c.strokeStyle = 'rgba(11, 110, 79, 0.06)';
+      c.stroke();
+      c.restore();
+    };
+
+    // Main animation loop (runs at 60 FPS)
+    const animate = () => {
+      ctx.clearRect(0, 0, width, height);
+
+      // 1. Draw glowing orbs
+      orbs.forEach((orb) => {
+        orb.x += orb.vx;
+        orb.y += orb.vy;
+
+        // Bounce off walls
+        if (orb.x < -orb.radius) orb.x = width + orb.radius;
+        if (orb.x > width + orb.radius) orb.x = -orb.radius;
+        if (orb.y < -orb.radius) orb.y = height + orb.radius;
+        if (orb.y > height + orb.radius) orb.y = -orb.radius;
+
+        // Draw radial gradient orb
+        const grad = ctx.createRadialGradient(orb.x, orb.y, 0, orb.x, orb.y, orb.radius);
+        grad.addColorStop(0, 'rgba(11, 110, 79, 0.06)'); // primary green glow
+        grad.addColorStop(0.5, 'rgba(11, 110, 79, 0.02)');
+        grad.addColorStop(1, 'rgba(11, 110, 79, 0)');
+        
+        ctx.fillStyle = grad;
+        ctx.beginPath();
+        ctx.arc(orb.x, orb.y, orb.radius, 0, Math.PI * 2);
+        ctx.fill();
+      });
+
+      // 2. Update and draw energy dots (particles)
+      particles.forEach((p) => {
+        p.x += p.vx;
+        p.y += p.vy;
+
+        // Wrap boundaries
+        if (p.x < 0) p.x = width;
+        if (p.x > width) p.x = 0;
+        if (p.y < 0) p.y = height;
+        if (p.y > height) p.y = 0;
+
+        // Mouse interaction push
+        const dx = p.x - mouseRef.current.x;
+        const dy = p.y - mouseRef.current.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 120) {
+          const force = (120 - dist) / 120;
+          p.x += (dx / dist) * force * 3;
+          p.y += (dy / dist) * force * 3;
+        }
+
+        ctx.fillStyle = `rgba(132, 204, 22, ${p.alpha})`; // Accent Lime Green
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fill();
+      });
+
+      // 3. Update and draw leaves
+      leaves.forEach((leaf) => {
+        leaf.x += leaf.vx;
+        leaf.y += leaf.vy;
+        leaf.angle += leaf.spin;
+
+        // Wrap boundary
+        if (leaf.y > height + 20) {
+          leaf.y = -20;
+          leaf.x = Math.random() * width;
+        }
+        if (leaf.x > width + 20) {
+          leaf.x = -20;
+        }
+
+        // Mouse disturbance
+        const dx = leaf.x - mouseRef.current.x;
+        const dy = leaf.y - mouseRef.current.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 100) {
+          const force = (100 - dist) / 100;
+          leaf.x += (dx / dist) * force * 2;
+          leaf.y += (dy / dist) * force * 2;
+          leaf.angle += force * 0.1;
+        }
+
+        drawLeaf(ctx, leaf.x, leaf.y, leaf.size, leaf.angle);
+      });
+
+      animationFrameId = requestAnimationFrame(animate);
+    };
+
+    animate();
+
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('mousemove', handleMouseMove);
+      canvas.removeEventListener('mouseleave', handleMouseLeave);
+    };
+  }, []);
+
+  return (
+    <canvas
+      ref={canvasRef}
+      className="absolute inset-0 w-full h-full pointer-events-none z-0"
+      style={{ mixBlendMode: 'multiply' }}
+    />
+  );
+}
+</file>
+
+<file path="src/components/Counter.tsx">
+'use client';
+
+import React, { useEffect, useState, useRef } from 'react';
+import { useInView } from 'framer-motion';
+
+interface CounterProps {
+  value: number;
+  suffix?: string;
+  duration?: number;
+}
+
+export default function Counter({ value, suffix = '', duration = 2 }: CounterProps) {
+  const [count, setCount] = useState(0);
+  const ref = useRef<HTMLSpanElement>(null);
+  const isInView = useInView(ref, { once: true, margin: '-50px' });
+
+  useEffect(() => {
+    if (!isInView) return;
+
+    let start = 0;
+    const end = value;
+    const totalMiliseconds = duration * 1000;
+    const incrementTime = Math.max(Math.floor(totalMiliseconds / end), 20); // max ~50fps
+    
+    const timer = setInterval(() => {
+      start += Math.ceil(end / (totalMiliseconds / incrementTime));
+      if (start >= end) {
+        clearInterval(timer);
+        setCount(end);
+      } else {
+        setCount(start);
+      }
+    }, incrementTime);
+
+    return () => clearInterval(timer);
+  }, [isInView, value, duration]);
+
+  return (
+    <span ref={ref} className="font-heading font-extrabold text-white">
+      {count.toLocaleString()}
+      {suffix}
+    </span>
+  );
+}
+</file>
+
+<file path="src/components/CustomCursor.tsx">
+'use client';
+
+import React, { useEffect, useRef, useState } from 'react';
+import { gsap } from 'gsap';
+
+export default function CustomCursor() {
+  const dotRef = useRef<HTMLDivElement>(null);
+  const ringRef = useRef<HTMLDivElement>(null);
+  const textRef = useRef<HTMLDivElement>(null);
+  const [cursorType, setCursorType] = useState<'default' | 'link' | 'button' | 'image' | 'card'>('default');
+
+  useEffect(() => {
+    // Hide custom cursor on touch/mobile devices
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    if (isMobile) return;
+
+    const dot = dotRef.current;
+    const ring = ringRef.current;
+
+    if (!dot || !ring) return;
+
+    // Set initial position out of screen
+    gsap.set([dot, ring], { xPercent: -50, yPercent: -50, x: -100, y: -100 });
+
+    // GSAP quickTo optimization for smooth performance (60+ FPS)
+    const xDotTo = gsap.quickTo(dot, 'x', { duration: 0.1, ease: 'power3.out' });
+    const yDotTo = gsap.quickTo(dot, 'y', { duration: 0.1, ease: 'power3.out' });
+    
+    const xRingTo = gsap.quickTo(ring, 'x', { duration: 0.4, ease: 'power2.out' });
+    const yRingTo = gsap.quickTo(ring, 'y', { duration: 0.4, ease: 'power2.out' });
+
+    const handleMouseMove = (e: MouseEvent) => {
+      xDotTo(e.clientX);
+      yDotTo(e.clientY);
+      xRingTo(e.clientX);
+      yRingTo(e.clientY);
+    };
+
+    const handleMouseOver = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (!target) return;
+
+      const isLink = target.closest('a');
+      const isButton = target.closest('button') || target.closest('.btn-ripple') || target.closest('[role="button"]');
+      const isImage = target.closest('img') || target.closest('.bg-cover') || target.closest('svg');
+      const isCard = target.closest('.glass-card') || target.closest('.rounded-3xl') || target.closest('.group');
+
+      if (isLink) {
+        setCursorType('link');
+      } else if (isButton) {
+        setCursorType('button');
+      } else if (isImage) {
+        setCursorType('image');
+      } else if (isCard) {
+        setCursorType('card');
+      } else {
+        setCursorType('default');
+      }
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseover', handleMouseOver);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseover', handleMouseOver);
+    };
+  }, []);
+
+  useEffect(() => {
+    const ring = ringRef.current;
+    const dot = dotRef.current;
+    const text = textRef.current;
+
+    if (!ring || !dot) return;
+
+    // Animate cursor states using GSAP
+    if (cursorType === 'link') {
+      gsap.to(ring, {
+        scale: 2.2,
+        backgroundColor: 'rgba(11, 110, 79, 0.1)',
+        borderColor: '#0B6E4F',
+        borderWidth: '1px',
+        duration: 0.3,
+      });
+      gsap.to(dot, { scale: 0, duration: 0.2 });
+      if (text) gsap.to(text, { opacity: 1, scale: 1, duration: 0.2 });
+    } else if (cursorType === 'button') {
+      gsap.to(ring, {
+        scale: 1.6,
+        backgroundColor: '#22C55E',
+        borderColor: '#22C55E',
+        mixBlendMode: 'difference',
+        duration: 0.3,
+      });
+      gsap.to(dot, { scale: 0, duration: 0.2 });
+      if (text) gsap.to(text, { opacity: 0, scale: 0.5, duration: 0.2 });
+    } else if (cursorType === 'image') {
+      gsap.to(ring, {
+        scale: 1.5,
+        backgroundColor: 'transparent',
+        borderColor: '#84CC16',
+        borderWidth: '2px',
+        duration: 0.3,
+      });
+      gsap.to(dot, { scale: 1.5, backgroundColor: '#84CC16', duration: 0.2 });
+      if (text) gsap.to(text, { opacity: 0, scale: 0.5, duration: 0.2 });
+    } else if (cursorType === 'card') {
+      gsap.to(ring, {
+        scale: 1.3,
+        backgroundColor: 'transparent',
+        borderColor: '#0B6E4F',
+        borderWidth: '2px',
+        duration: 0.3,
+      });
+      gsap.to(dot, { scale: 1.2, backgroundColor: '#0B6E4F', duration: 0.2 });
+      if (text) gsap.to(text, { opacity: 0, scale: 0.5, duration: 0.2 });
+    } else {
+      // Default state
+      gsap.to(ring, {
+        scale: 1,
+        backgroundColor: 'transparent',
+        borderColor: 'rgba(11, 110, 79, 0.4)',
+        borderWidth: '1px',
+        mixBlendMode: 'normal',
+        duration: 0.3,
+      });
+      gsap.to(dot, { scale: 1, backgroundColor: '#0B6E4F', duration: 0.2 });
+      if (text) gsap.to(text, { opacity: 0, scale: 0.5, duration: 0.2 });
+    }
+  }, [cursorType]);
+
+  return (
+    <div className="hidden md:block pointer-events-none fixed inset-0 z-[10000]">
+      {/* Center Dot */}
+      <div
+        ref={dotRef}
+        className="fixed w-2 h-2 rounded-full bg-primary pointer-events-none transition-transform duration-100 ease-out"
+      />
+
+      {/* Outer Ring */}
+      <div
+        ref={ringRef}
+        className="fixed w-9 h-9 rounded-full border border-primary/40 pointer-events-none flex items-center justify-center overflow-hidden"
+        style={{ willChange: 'transform, opacity, border-color, background-color' }}
+      >
+        {/* Hover link View Text */}
+        <span
+          ref={textRef}
+          className="opacity-0 scale-50 text-[8px] font-heading font-extrabold tracking-wider uppercase text-primary text-center pointer-events-none"
+        >
+          View
+        </span>
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/Footer.tsx">
+'use client';
+
+import React from 'react';
+import Link from 'next/link';
+import { ShieldCheck, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, ArrowRight } from 'lucide-react';
+
+export default function Footer() {
+  return (
+    <footer className="bg-dark text-gray-300 font-sans border-t border-primary/20 pt-16 pb-8">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+          {/* Brand Col */}
+          <div className="lg:col-span-2 flex flex-col gap-6">
+            <Link href="/" className="flex items-center gap-2 text-white font-heading font-extrabold text-2xl tracking-wider select-none">
+              <ShieldCheck className="h-8 w-8 text-secondary" />
+              <span>
+                SPOORTY <span className="text-secondary">BIO ENERGY</span>
+              </span>
+            </Link>
+            <p className="text-gray-400 text-sm max-w-sm leading-relaxed">
+              Transforming Organic Waste into Renewable Energy. We help industries, municipalities, and agricultural communities reduce carbon emissions while building a sustainable future.
+            </p>
+            <div className="flex items-center gap-3 mt-2">
+              <a href="#" className="p-2 rounded-lg bg-dark-light hover:bg-secondary text-gray-400 hover:text-white transition-all border border-gray-800" aria-label="Facebook">
+                <Facebook className="h-4 w-4" />
+              </a>
+              <a href="#" className="p-2 rounded-lg bg-dark-light hover:bg-secondary text-gray-400 hover:text-white transition-all border border-gray-800" aria-label="Twitter">
+                <Twitter className="h-4 w-4" />
+              </a>
+              <a href="#" className="p-2 rounded-lg bg-dark-light hover:bg-secondary text-gray-400 hover:text-white transition-all border border-gray-800" aria-label="Linkedin">
+                <Linkedin className="h-4 w-4" />
+              </a>
+              <a href="#" className="p-2 rounded-lg bg-dark-light hover:bg-secondary text-gray-400 hover:text-white transition-all border border-gray-800" aria-label="Instagram">
+                <Instagram className="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+
+          {/* Quick Links Col */}
+          <div className="flex flex-col gap-4">
+            <h3 className="text-white font-heading font-bold text-base tracking-wide uppercase">Quick Links</h3>
+            <ul className="flex flex-col gap-2.5 text-sm">
+              <li>
+                <Link href="/" className="hover:text-secondary transition-colors">Home</Link>
+              </li>
+              <li>
+                <Link href="/about" className="hover:text-secondary transition-colors">About</Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:text-secondary transition-colors">Services</Link>
+              </li>
+              <li>
+                <Link href="/projects" className="hover:text-secondary transition-colors">Projects</Link>
+              </li>
+              <li>
+                <Link href="/blog" className="hover:text-secondary transition-colors">Blog</Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-secondary transition-colors">Contact</Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Solutions Col */}
+          <div className="flex flex-col gap-4">
+            <h3 className="text-white font-heading font-bold text-base tracking-wide uppercase">Solutions</h3>
+            <ul className="flex flex-col gap-2.5 text-sm">
+              <li>
+                <Link href="/solutions" className="hover:text-secondary transition-colors">Biogas Plant Design</Link>
+              </li>
+              <li>
+                <Link href="/solutions" className="hover:text-secondary transition-colors">Bio-CNG Production</Link>
+              </li>
+              <li>
+                <Link href="/solutions" className="hover:text-secondary transition-colors">Biomethane Upgradation</Link>
+              </li>
+              <li>
+                <Link href="/solutions" className="hover:text-secondary transition-colors">Organic Waste Management</Link>
+              </li>
+              <li>
+                <Link href="/solutions" className="hover:text-secondary transition-colors">Industrial Energy Solutions</Link>
+              </li>
+              <li>
+                <Link href="/solutions" className="hover:text-secondary transition-colors">Operation & Maintenance</Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Col */}
+          <div className="flex flex-col gap-4">
+            <h3 className="text-white font-heading font-bold text-base tracking-wide uppercase">Contact Us</h3>
+            <ul className="flex flex-col gap-3.5 text-sm text-gray-400">
+              <li className="flex items-start gap-2.5">
+                <Phone className="h-4 w-4 text-secondary mt-0.5 shrink-0" />
+                <span>+91 98765 43210</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <Mail className="h-4 w-4 text-secondary mt-0.5 shrink-0" />
+                <span className="break-all">info@spoortybioenergy.com</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <MapPin className="h-4 w-4 text-secondary mt-0.5 shrink-0" />
+                <span>123 Green Energy Park, Hyderabad, India</span>
+              </li>
+            </ul>
+            <div className="mt-2">
+              <a
+                href="https://maps.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs font-semibold bg-primary/20 hover:bg-primary/30 border border-primary/40 text-white py-2 px-4 rounded-lg transition-all"
+              >
+                <span>Get Directions</span>
+                <ArrowRight className="h-3 w-3" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Banner */}
+        <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+          <p>© {new Date().getFullYear()} Spoorty Bio Energy. All Rights Reserved.</p>
+          <div className="flex items-center gap-6">
+            <a href="#" className="hover:text-gray-400">Privacy Policy</a>
+            <a href="#" className="hover:text-gray-400">Terms of Service</a>
+            <a href="#" className="hover:text-gray-400">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
+</file>
+
+<file path="src/components/Navbar.tsx">
+'use client';
+
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { Menu, X, ArrowRight, ShieldCheck } from 'lucide-react';
+
+const navItems = [
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Services', href: '/services' },
+  { name: 'Industries', href: '/industries' },
+  { name: 'Projects', href: '/projects' },
+  { name: 'Blog', href: '/blog' },
+  { name: 'Contact', href: '/contact' },
+];
+
+export default function Navbar() {
+  const pathname = usePathname();
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check on mount
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const isHome = pathname === '/';
+  const isDarkTheme = isScrolled || !isHome;
+
+  return (
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? 'glass-nav-solid py-4 shadow-lg' : 'bg-transparent py-6'
+      }`}
+    >
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12 flex items-center justify-between">
+        {/* Logo */}
+        <Link href="/" className={`flex items-center gap-2 font-heading font-extrabold text-xl md:text-2xl tracking-wider select-none transition-colors duration-300 ${isDarkTheme ? 'text-white' : 'text-dark'}`}>
+          <ShieldCheck className={`h-8 w-8 transition-colors duration-300 ${isDarkTheme ? 'text-secondary' : 'text-primary'}`} />
+          <span>
+            SPOORTY <span className={isDarkTheme ? 'text-secondary' : 'text-primary'}>BIO ENERGY</span>
+          </span>
+        </Link>
+
+        {/* Desktop Menu */}
+        <nav className="hidden lg:flex items-center gap-8">
+          {navItems.map((item) => {
+            const isActive = pathname === item.href;
+            return (
+              <Link
+                key={item.name}
+                href={item.href}
+                className={`relative font-sans text-sm font-medium tracking-wide transition-colors duration-200 ${
+                  isActive 
+                    ? (isDarkTheme ? 'text-white' : 'text-primary') 
+                    : (isDarkTheme ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-primary')
+                }`}
+              >
+                {item.name}
+                {isActive && (
+                  <span className={`absolute -bottom-1.5 left-0 right-0 h-0.5 rounded-full ${isDarkTheme ? 'bg-secondary' : 'bg-primary'}`} />
+                )}
+              </Link>
+            );
+          })}
+        </nav>
+
+        {/* CTA Button */}
+        <div className="hidden lg:block">
+          <Link
+            href="/contact"
+            className="group relative inline-flex items-center justify-center gap-1.5 bg-primary hover:bg-primary/95 text-white font-sans text-sm font-semibold py-2.5 px-6 rounded-full transition-all duration-200 shadow-md shadow-primary/20 hover:shadow-lg hover:shadow-primary/30 active:scale-95"
+          >
+            <span>Get Consultation</span>
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </Link>
+        </div>
+
+        {/* Mobile Menu Toggle */}
+        <button
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          className={`lg:hidden focus:outline-none p-1.5 rounded-lg border transition-colors duration-300 ${
+            isDarkTheme 
+              ? 'text-white border-gray-700 bg-dark/40 hover:text-secondary' 
+              : 'text-dark border-gray-200 bg-white/40 hover:text-primary'
+          }`}
+          aria-label="Toggle menu"
+        >
+          {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        </button>
+      </div>
+
+      {/* Mobile Drawer */}
+      {isMobileMenuOpen && (
+        <div className="lg:hidden fixed inset-0 top-[73px] z-40 bg-dark/95 backdrop-blur-lg flex flex-col justify-between p-8 border-t border-gray-800 transition-all duration-300">
+          <div className="flex flex-col gap-6">
+            {navItems.map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`font-heading text-xl font-bold tracking-wide transition-colors ${
+                    isActive ? 'text-secondary pl-2 border-l-2 border-secondary' : 'text-gray-300'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              );
+            })}
+          </div>
+
+          <div className="flex flex-col gap-4 mt-8">
+            <Link
+              href="/contact"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="w-full text-center bg-secondary hover:bg-secondary/90 text-white font-sans font-semibold py-3 px-6 rounded-xl transition-all shadow-lg shadow-secondary/20"
+            >
+              Get Consultation
+            </Link>
+            <p className="text-center text-xs text-gray-500 font-sans mt-4">
+              © {new Date().getFullYear()} Spoorty Bio Energy. All rights reserved.
+            </p>
+          </div>
+        </div>
+      )}
+    </header>
+  );
+}
+</file>
+
+<file path="src/components/PageHeader.tsx">
+'use client';
+
+import React from 'react';
+import Link from 'next/link';
+
+interface PageHeaderProps {
+  title: string;
+  description: string;
+  breadcrumbs: { name: string; href?: string }[];
+}
+
+export default function PageHeader({ title, description, breadcrumbs }: PageHeaderProps) {
+  return (
+    <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 bg-dark overflow-hidden">
+      {/* Background Gradients & Grid */}
+      <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 bg-primary/20 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-secondary/15 rounded-full blur-[100px] pointer-events-none"></div>
+      
+      {/* Top Border Accent */}
+      <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10">
+        {/* Breadcrumbs */}
+        <nav className="flex items-center gap-2 mb-4 text-xs font-medium text-gray-400 font-sans">
+          {breadcrumbs.map((crumb, idx) => {
+            const isLast = idx === breadcrumbs.length - 1;
+            return (
+              <React.Fragment key={crumb.name}>
+                {idx > 0 && <span className="text-gray-600">/</span>}
+                {isLast || !crumb.href ? (
+                  <span className="text-secondary">{crumb.name}</span>
+                ) : (
+                  <Link href={crumb.href} className="hover:text-white transition-colors">
+                    {crumb.name}
+                  </Link>
+                )}
+              </React.Fragment>
+            );
+          })}
+        </nav>
+
+        {/* Heading */}
+        <h1 className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl text-white mb-6 max-w-3xl leading-tight">
+          {title}
+        </h1>
+
+        {/* Description */}
+        <p className="font-sans text-lg text-gray-300 max-w-2xl leading-relaxed">
+          {description}
+        </p>
+      </div>
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/Preloader.tsx">
+'use client';
+
+import React, { useEffect, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+
+export default function Preloader() {
+  const [progress, setProgress] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    // Prevent scrolling while loading
+    document.body.style.overflow = 'hidden';
+
+    // Simulate progress increments up to 100% over 1.4s
+    const startTime = Date.now();
+    const duration = 1200; // ms
+
+    const updateProgress = () => {
+      const elapsed = Date.now() - startTime;
+      const calculated = Math.min(100, Math.floor((elapsed / duration) * 100));
+      
+      setProgress(calculated);
+
+      if (elapsed < duration) {
+        requestAnimationFrame(updateProgress);
+      } else {
+        setProgress(100);
+        // Delay slightly for visual hold before fading out
+        setTimeout(() => {
+          setIsLoaded(true);
+          document.body.style.overflow = '';
+        }, 300);
+      }
+    };
+
+    requestAnimationFrame(updateProgress);
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, []);
+
+  return (
+    <AnimatePresence>
+      {!isLoaded && (
+        <motion.div
+          initial={{ opacity: 1 }}
+          exit={{ 
+            opacity: 0,
+            scale: 1.05,
+            filter: 'blur(10px)',
+            transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] } 
+          }}
+          className="fixed inset-0 z-[9999] bg-dark flex flex-col items-center justify-center text-white"
+        >
+          {/* Noise effect */}
+          <div className="absolute inset-0 bg-noise pointer-events-none" />
+
+          {/* SVG Vector Drawing Logo */}
+          <div className="relative flex flex-col items-center select-none z-10">
+            <svg 
+              className="w-28 h-28 text-white mb-6" 
+              viewBox="0 0 100 100" 
+              fill="none" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              {/* Outer Shield Path */}
+              <motion.path
+                d="M 50 10 L 82 26 L 82 62 L 50 88 L 18 62 L 18 26 Z"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                initial={{ pathLength: 0 }}
+                animate={{ pathLength: 1 }}
+                transition={{ duration: 1.1, ease: 'easeInOut' }}
+              />
+              {/* Inner Leaf Path */}
+              <motion.path
+                d="M 50 32 C 50 32 37 45 37 57 C 37 66 45 70 50 70 C 55 70 63 66 63 57 C 63 45 50 32 50 32 Z"
+                stroke="#22C55E"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                initial={{ pathLength: 0 }}
+                animate={{ pathLength: 1 }}
+                transition={{ duration: 0.9, delay: 0.2, ease: 'easeInOut' }}
+              />
+            </svg>
+
+            {/* Brand Title */}
+            <motion.h1 
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+              className="font-heading font-extrabold text-2xl tracking-widest text-white mb-2"
+            >
+              SPOORTY <span className="text-secondary">BIO ENERGY</span>
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.5 }}
+              transition={{ delay: 0.6, duration: 0.5 }}
+              className="font-sans text-xs tracking-wider text-gray-400 uppercase mb-8"
+            >
+              Renewable Energy & Biogas Engineering
+            </motion.p>
+
+            {/* Counter percentage indicator */}
+            <div className="font-heading font-bold text-lg text-secondary tabular-nums min-w-[3rem] text-center mb-2">
+              {progress}%
+            </div>
+
+            {/* Horizontal progress bar */}
+            <div className="w-56 h-[2px] bg-white/10 rounded-full overflow-hidden relative">
+              <motion.div
+                className="absolute top-0 left-0 bottom-0 bg-secondary"
+                style={{ width: `${progress}%` }}
+                layoutId="progressBar"
+              />
+            </div>
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+}
+</file>
+
+<file path="src/components/ScrollReveal.tsx">
+'use client';
+
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+interface ScrollRevealProps {
+  children: React.ReactNode;
+  delay?: number;
+  duration?: number;
+  yOffset?: number;
+  xOffset?: number;
+  scaleOffset?: number;
+  rotateOffset?: number;
+  blurOffset?: number;
+  className?: string;
+}
+
+export default function ScrollReveal({
+  children,
+  delay = 0,
+  duration = 0.6,
+  yOffset = 30,
+  xOffset = 0,
+  scaleOffset = 1,
+  rotateOffset = 0,
+  blurOffset = 0,
+  className = '',
+}: ScrollRevealProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const el = containerRef.current;
+    if (!el) return;
+
+    // Apply GPU-accelerated defaults
+    gsap.set(el, { transformPerspective: 1000, transformStyle: 'preserve-3d' });
+
+    const fromVars: gsap.TweenVars = {
+      opacity: 0,
+      y: yOffset,
+      x: xOffset,
+      scale: scaleOffset,
+      rotation: rotateOffset,
+      force3D: true, // GPU acceleration
+    };
+
+    if (blurOffset > 0) {
+      fromVars.filter = `blur(${blurOffset}px)`;
+    }
+
+    const toVars: gsap.TweenVars = {
+      opacity: 1,
+      y: 0,
+      x: 0,
+      scale: 1,
+      rotation: 0,
+      duration: duration,
+      delay: delay,
+      ease: 'power2.out',
+      overwrite: 'auto',
+      scrollTrigger: {
+        trigger: el,
+        start: 'top 88%',
+        end: 'bottom 12%',
+        toggleActions: 'play reverse play reverse',
+      }
+    };
+
+    if (blurOffset > 0) {
+      toVars.filter = 'blur(0px)';
+    }
+
+    // Set initial values
+    gsap.set(el, fromVars);
+
+    // Create reveal animation
+    const tween = gsap.to(el, toVars);
+
+    return () => {
+      tween.kill();
+      if (tween.scrollTrigger) {
+        tween.scrollTrigger.kill();
+      }
+    };
+  }, [delay, duration, yOffset, xOffset, scaleOffset, rotateOffset, blurOffset]);
+
+  return (
+    <div ref={containerRef} className={className} style={{ willChange: 'transform, opacity' }}>
+      {children}
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/SmoothScrollProvider.tsx">
+'use client';
+
+import React, { useEffect, useRef } from 'react';
+import Lenis from 'lenis';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+// Register GSAP ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
+
+interface SmoothScrollProps {
+  children: React.ReactNode;
+}
+
+export default function SmoothScrollProvider({ children }: SmoothScrollProps) {
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Disable smooth scroll on mobile devices for accessibility and performance
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    if (isMobile) return;
+
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // easeOutExpo
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
+      smoothWheel: true,
+      wheelMultiplier: 1.0,
+      touchMultiplier: 2.0,
+    });
+
+    // Sync ScrollTrigger updates with Lenis scrolling
+    lenis.on('scroll', () => {
+      ScrollTrigger.update();
+    });
+
+    // Connect Lenis frame updates to GSAP ticker
+    const updatePhysics = (time: number) => {
+      lenis.raf(time * 1000);
+    };
+
+    gsap.ticker.add(updatePhysics);
+    gsap.ticker.lagSmoothing(0);
+
+    // Store in global window for debugging and other triggers if needed
+    (window as any).lenis = lenis;
+
+    return () => {
+      lenis.destroy();
+      gsap.ticker.remove(updatePhysics);
+      delete (window as any).lenis;
+    };
+  }, []);
+
+  return <div ref={scrollContainerRef}>{children}</div>;
+}
+</file>
+
+<file path="src/components/ThreeDTilt.tsx">
+'use client';
+
+import React, { useRef, useEffect } from 'react';
+import { gsap } from 'gsap';
+
+interface ThreeDTiltProps {
+  children: React.ReactNode;
+  className?: string;
+  maxRotate?: number; // Maximum rotation in degrees
+  overflowHidden?: boolean; // Whether to apply overflow-hidden
+}
+
+export default function ThreeDTilt({ 
+  children, 
+  className = '', 
+  maxRotate = 10,
+  overflowHidden = true
+}: ThreeDTiltProps) {
+  const cardRef = useRef<HTMLDivElement>(null);
+  const glareRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Disable 3D tilt on touch devices for usability
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    if (isMobile) return;
+
+    const card = cardRef.current;
+    const glare = glareRef.current;
+    if (!card || !glare) return;
+
+    // Apply baseline CSS variables for GPU-accelerated transforms
+    gsap.set(card, { transformPerspective: 1000, transformStyle: 'preserve-3d' });
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left; // Mouse x relative to element
+      const y = e.clientY - rect.top;  // Mouse y relative to element
+
+      const px = x / rect.width;
+      const py = y / rect.height;
+
+      // Calculate tilt angles (-maxRotate to +maxRotate)
+      const rotateX = (py - 0.5) * -maxRotate;
+      const rotateY = (px - 0.5) * maxRotate;
+
+      // Tilt the card
+      gsap.to(card, {
+        rotateX: rotateX,
+        rotateY: rotateY,
+        duration: 0.4,
+        ease: 'power2.out',
+        overwrite: 'auto',
+      });
+
+      // Move the glare highlight overlay
+      gsap.to(glare, {
+        opacity: 0.25,
+        left: x - rect.width / 2,
+        top: y - rect.height / 2,
+        duration: 0.2,
+        ease: 'power1.out',
+        overwrite: 'auto',
+      });
+    };
+
+    const handleMouseLeave = () => {
+      // Reset card tilt to original state
+      gsap.to(card, {
+        rotateX: 0,
+        rotateY: 0,
+        duration: 0.6,
+        ease: 'power3.out',
+        overwrite: 'auto',
+      });
+
+      // Hide the glare highlight
+      gsap.to(glare, {
+        opacity: 0,
+        duration: 0.6,
+        ease: 'power3.out',
+        overwrite: 'auto',
+      });
+    };
+
+    card.addEventListener('mousemove', handleMouseMove);
+    card.addEventListener('mouseleave', handleMouseLeave);
+
+    return () => {
+      card.removeEventListener('mousemove', handleMouseMove);
+      card.removeEventListener('mouseleave', handleMouseLeave);
+    };
+  }, [maxRotate]);
+
+  return (
+    <div 
+      ref={cardRef} 
+      className={`relative group preserve-3d ${overflowHidden ? 'overflow-hidden' : ''} ${className}`}
+      style={{ willChange: 'transform' }}
+    >
+      {/* Glare effect overlay */}
+      <div 
+        ref={glareRef}
+        className="absolute w-[200%] h-[200%] pointer-events-none rounded-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.3)_0%,transparent_65%)] opacity-0 z-20 mix-blend-screen"
+        style={{ 
+          transform: 'translate(-50%, -50%)', 
+          willChange: 'opacity, left, top',
+          pointerEvents: 'none'
+        }}
+      />
+      {children}
+    </div>
+  );
+}
+</file>
+
+<file path=".gitignore">
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+</file>
+
+<file path="AGENTS.md">
+<!-- BEGIN:nextjs-agent-rules -->
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
+<!-- END:nextjs-agent-rules -->
+</file>
+
+<file path="CLAUDE.md">
+@AGENTS.md
+</file>
+
+<file path="eslint.config.mjs">
+import { defineConfig, globalIgnores } from "eslint/config";
+import nextVitals from "eslint-config-next/core-web-vitals";
+import nextTs from "eslint-config-next/typescript";
+
+const eslintConfig = defineConfig([
+  ...nextVitals,
+  ...nextTs,
+  // Override default ignores of eslint-config-next.
+  globalIgnores([
+    // Default ignores of eslint-config-next:
+    ".next/**",
+    "out/**",
+    "build/**",
+    "next-env.d.ts",
+  ]),
+]);
+
+export default eslintConfig;
+</file>
+
+<file path="next.config.ts">
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  /* config options here */
+};
+
+export default nextConfig;
+</file>
+
+<file path="package.json">
+{
+  "name": "spoorty-bio-energy",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "framer-motion": "^12.42.2",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.25",
+    "lucide-react": "^0.470.0",
+    "next": "16.2.10",
+    "react": "19.2.4",
+    "react-countup": "^6.5.3",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.10",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
+</file>
+
+<file path="postcss.config.mjs">
+const config = {
+  plugins: {
+    "@tailwindcss/postcss": {},
+  },
+};
+
+export default config;
+</file>
+
+<file path="README.md">
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+</file>
+
+<file path="tsconfig.json">
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+  ],
+  "exclude": ["node_modules"]
+}
+</file>
+
+</files>
